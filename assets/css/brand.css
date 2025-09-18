@@ -56,7 +56,7 @@ a{color:inherit}
 
 /* Slot de video (tarjeta blanca) */
 .hero-card{
-  margin:0 auto 72px; max-width:880px; min-height:260px;
+  margin:0 auto 72px; max-width:880px; min-height: 280px;
   background:#fff; border-radius:12px; box-shadow:var(--shadow-card);
 }
 
@@ -103,7 +103,7 @@ a{color:inherit}
 @media (max-width: 820px){
   :root{ --hero-h: 520px; }
   .hero-inner{padding-top:72px}
-  .hero-card{min-height:200px}
+  .hero-card{min-height: 280px}
   .productos-grid{grid-template-columns:1fr}
   .cta-wrapper{gap:16px}
 }
