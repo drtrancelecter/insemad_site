@@ -1,0 +1,65 @@
+:root{
+  --teal:#0e6771; --teal-dark:#0b555e; --ink:#0f3b3f; --paper:#fff;
+  --hero-height:600px; --hero-pad-top:24px; --hero-pad-bottom:120px;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,.16);
+}
+html{ overflow-y:scroll; } /* Scroll reservado: evita micro-saltos */
+*{ box-sizing:border-box; }
+html,body{ margin:0; padding:0; font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif; color:#17363a; background:#fff; }
+.container{ max-width:1100px; margin:0 auto; padding:0 20px; }
+
+/* Topbar fija e idéntica */
+.topbar{ position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid #e5eef0; }
+.topbar .container{ display:flex; align-items:center; justify-content:space-between; height:54px; }
+.brand{ font-weight:800; letter-spacing:.02em; color:var(--ink); display:flex; align-items:center; gap:10px; user-select:none; }
+.brand img{ height:24px; width:24px; border-radius:50%; display:block; }
+.brand span{ font-weight:800; transform:none!important; transition:none!important; } /* anti-zoom */
+.nav a{ color:var(--ink); text-decoration:none; margin-left:18px; font-weight:600; opacity:.9; }
+.nav a:hover{ opacity:1; }
+
+/* Hero inamovible */
+.hero{
+  background:linear-gradient(180deg,var(--teal) 0%, var(--teal-dark) 100%);
+  min-height:var(--hero-height)!important;
+  max-height:var(--hero-height)!important;
+  padding:var(--hero-pad-top) 0 var(--hero-pad-bottom)!important;
+  display:flex; align-items:center; justify-content:center;
+}
+.hero-inner{ display:flex; flex-direction:column; align-items:center; text-align:center; gap:16px; }
+.hero-title{ color:#fff; font-weight:900; font-size:44px; line-height:1.08; letter-spacing:.2px; margin:0; }
+.hero-sub{ color:#d9f1f3; font-weight:600; margin:0; }
+.hero-chips{ display:flex; flex-wrap:wrap; gap:12px; justify-content:center; }
+.chip{ background:#fff; color:var(--teal); padding:.6rem 1.2rem; border-radius:28px; font-weight:800; white-space:nowrap; }
+
+.btn-wsp{ display:inline-block; background:#fff; color:var(--teal); font-weight:800; padding:.65rem 1rem; border-radius:12px; text-decoration:none; box-shadow:0 2px 0 rgba(0,0,0,.06); }
+.btn-wsp:hover{ transform:translateY(-1px); }
+
+.hero-card{ background:#fff; border-radius:var(--radius); box-shadow:var(--shadow); padding:8px; width:100%; max-width:660px; margin:8px auto 0; }
+.hero-card .ph{ height:220px; border-radius:12px; background:#f5f7f8; }
+
+.section{ padding:40px 0; }
+.site-footer{ padding:18px 0; text-align:center; color:#436d73; background:#fff; }
+.site-footer small{ opacity:.8; }
+
+/* Botones flotantes (siempre visibles) */
+.floating-buttons{ position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; align-items:center; z-index:999; gap:14px; }
+.btn-float{ width:60px; height:60px; border-radius:18px; display:flex; align-items:center; justify-content:center; box-shadow:none; }
+.btn-float.black{ background:#111; } .btn-float.green{ background:#5a7720; } .btn-float.blue{ background:#0077B5; }
+.btn-float img, .btn-float svg{ width:28px; height:28px; }
+
+/* CTA inferior */
+.cta{ display:flex; gap:16px; justify-content:center; padding:24px 0 0; }
+.cta .btn{ background:#0E6668; color:#fff; padding:.85rem 1.2rem; border-radius:10px; text-decoration:none; font-weight:800; }
+
+/* Grilla de productos (rígida) */
+.productos-grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; }
+.productos-grid .card{ background:#fff; border:1px solid #e9ecef; border-radius:12px; padding:16px; text-align:center; box-shadow:0 6px 16px rgba(0,0,0,.06); }
+.productos-grid .card h3{ color:#0E6668; margin:.25rem 0 .5rem; }
+
+/* Placeholders invisibles para evitar flex re-centrado con vacío */
+.placeholder-hero{ height:1px; width:1px; opacity:0; pointer-events:none; }
+
+@media (max-width:640px){
+  .hero-title{ font-size:34px; }
+}
