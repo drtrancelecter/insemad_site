@@ -232,3 +232,25 @@ body{
 }
 
 /* ====== FIN HOTFIX ====== */
+
+/* === Ajustes finos de topbar y marca (override) === */
+.topbar{ -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+.brand-text{
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif !important;
+  font-weight: 900 !important;      /* misma “pegada” que tu óptimo */
+  letter-spacing: .02em !important; /* micro tracking para legibilidad */
+  color: #0c2f33 !important;        /* tinta profunda */
+}
+
+/* Afilado del logo y tamaño fijo */
+.logo-img{
+  width:44px !important; height:44px !important; object-fit: contain !important;
+  image-rendering: -webkit-optimize-contrast; /* WebKit */
+  image-rendering: crisp-edges;               /* otros */
+}
+
+/* === Gradiente hero igual a punto óptimo === */
+.hero{
+  background: linear-gradient(180deg, #0B7D80 0%, #07565D 100%) !important;
+}
