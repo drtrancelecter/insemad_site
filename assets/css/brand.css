@@ -54,11 +54,11 @@ a{color:inherit}
 /* Slot de video (tarjeta blanca) */
 .hero-card{
   margin:0 auto 72px;
-  max-width:880px;
-  min-height:280px;
+  max-width: 860px;
+  min-height: 220px;
   background:#fff;
   border-radius:12px;
-  box-shadow:var(--shadow-card);
+  box-shadow: 0 8px 26px rgba(0,0,0,.16);
 }
 
 
@@ -107,11 +107,11 @@ a{color:inherit}
   .hero-inner{padding-top:72px}
   .hero-card{
   margin:0 auto 72px;
-  max-width:880px;
-  min-height:280px;
+  max-width: 860px;
+  min-height: 220px;
   background:#fff;
   border-radius:12px;
-  box-shadow:var(--shadow-card);
+  box-shadow: 0 8px 26px rgba(0,0,0,.16);
 }
 
   .productos-grid{grid-template-columns:1fr}
@@ -153,7 +153,7 @@ a.whatsapp:hover{ filter: brightness(.96); }
   max-width: 980px !important;
   min-height: 280px !important;
   border-radius: 16px !important;
-  box-shadow: 0 10px 28px rgba(0,0,0,.18) !important;
+  box-shadow: 0 8px 26px rgba(0,0,0,.16);
 }
 /* — Subtítulo del hero (igual a Punto_Optimo2) — */
 
@@ -167,3 +167,13 @@ a.whatsapp:hover{ filter: brightness(.96); }
   color: rgba(255,255,255,.95);
   margin: 8px 0 14px;
 }
+.hero-inner{ text-align:center; }
+a.whatsapp{
+  display:inline-block; margin:10px auto 20px; padding:12px 22px;
+  background:#fff; color:#0b2f33;
+  font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-weight:800; font-size:18px; letter-spacing:.2px; text-decoration:none;
+  border-radius:999px; box-shadow:0 6px 18px rgba(0,0,0,.14);
+  transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+a.whatsapp:hover{ transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,.18); filter:brightness(.98); }
