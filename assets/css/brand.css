@@ -123,3 +123,10 @@ a{color:inherit}
 
 /* — Smoothing cross-browser — */
 .topbar{ -moz-osx-font-smoothing: grayscale !important; text-rendering: optimizeLegibility !important; }
+/* --- Logo INSEMAD nítido (retina) — override final --- */
+.logo-img{
+  width:44px !important;
+  height:44px !important;
+  object-fit: contain !important;
+  image-rendering: auto !important; /* evita diente de sierra */
+}
