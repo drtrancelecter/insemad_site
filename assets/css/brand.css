@@ -44,7 +44,7 @@ a{color:inherit}
 }
 .hero-subtitle{
   margin:0 0 18px; text-align:center; color:rgba(255,255,255,.92);
-  font-weight:500; font-size:18px; letter-spacing:-0.01em;
+  font-weight:500; font-size:18px; letter-spacing:-0.02em;
 }
 
 /* Chips (pequeños) bajo subtítulo */
@@ -92,9 +92,9 @@ a{color:inherit}
   display:flex; flex-direction:column; gap:18px; z-index:100;
 }
 .fab{
-  width:56px; height:56px; border-radius:16px; display:grid; place-items:center;
+  width:56px; height:56px; border-radius: 16px; display:grid; place-items:center;
   background:#111; color:#fff; text-decoration:none; font-size:20px; line-height:1;
-  box-shadow:var(--shadow-soft); transition:transform .15s ease, box-shadow .15s ease
+  box-shadow: 0 6px 20px rgba(0,0,0,.12); transition:transform .15s ease, box-shadow .15s ease
 }
 .fab:hover{transform:scale(1.05); box-shadow:0 8px 28px rgba(0,0,0,.18)}
 .fab.green{background:#50762f} .fab.blue{background:#0a66c2}
@@ -107,3 +107,6 @@ a{color:inherit}
   .productos-grid{grid-template-columns:1fr}
   .cta-wrapper{gap:16px}
 }
+
+/* — Smoothing cross-browser — */
+.topbar{ -moz-osx-font-smoothing: grayscale !important; text-rendering: optimizeLegibility !important; }
