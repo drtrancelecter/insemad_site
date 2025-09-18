@@ -197,3 +197,38 @@ body{
   .hero-card{ height:140px; }
   .productos-grid{ grid-template-columns:1fr; }
 }
+
+/* ====== HOTFIX INICIO: evitar recorte del título y blindar topbar/logo ====== */
+:root{
+  /* mantenemos el alto pero aseguramos más colchón arriba vía padding */
+  --hero-pad-top: 88px;
+}
+
+/* Evitar cualquier clipping del título dentro del hero */
+.hero,
+.hero-inner{
+  overflow: visible !important;
+}
+
+/* Título sin márgenes negativos y con línea cómoda */
+.hero-title{
+  margin: 0 0 12px !important;
+  padding-top: 4px !important;
+  line-height: 1.14 !important;
+  /* el resto (tamaño/peso/color) ya viene del bloque base */
+}
+
+/* Blindaje del logo: tamaño fijo siempre */
+.logo-img{
+  width: 44px !important;
+  height: 44px !important;
+  object-fit: contain !important;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* Asegurar que el contenedor del topbar nunca “salte” por contenido */
+.topbar .container{
+  min-height: 54px;
+}
+
+/* ====== FIN HOTFIX ====== */
