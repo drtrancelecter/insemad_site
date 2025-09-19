@@ -341,3 +341,9 @@ a{color:inherit}
 @media (min-width:1024px){
   .sep-dot{ margin:0 .45ch; } /* antes .55ch */
 }
+
+/* Bullets desktop: compactar separador + tracking 0 */
+@media (min-width:1024px){
+  .sep-dot{ margin:0 .36ch; width:.40em; height:.40em; } /* antes .45ch y .45em */
+  #home-bullets{ letter-spacing:0em; }                   /* antes +0.01em */
+}
