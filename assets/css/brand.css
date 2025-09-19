@@ -347,3 +347,8 @@ a{color:inherit}
   .sep-dot{ margin:0 .36ch; width:.40em; height:.40em; } /* antes .45ch y .45em */
   #home-bullets{ letter-spacing:0em; }                   /* antes +0.01em */
 }
+
+/* Bullets desktop: ajuste fino de tamaño */
+@media (min-width:1024px){
+  #home-bullets{ font-size:19px; } /* antes 20px */
+}
