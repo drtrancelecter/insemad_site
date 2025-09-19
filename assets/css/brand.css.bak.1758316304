@@ -241,30 +241,3 @@ a{color:inherit}
 .btn-float img{ width:22px; height:22px }
 .btn-float.green img{ width:28px; height:28px; transform:rotate(-18deg) scale(1.06) }
 /* == end FAB == */
-
-/* ===== Home H1 tuning (Punto_Optimo2) ===== */
-#home-title{
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.01em;     /* tracking +0.01em */
-  line-height: 1.12;
-  text-align: center;
-  margin-top: 18px;           /* ritmo vertical */
-  margin-bottom: 8px;
-  max-width: 28ch;            /* 22–28ch para forzar 2 líneas limpias */
-  margin-left: auto;
-  margin-right: auto;
-}
-@media (min-width:1440px){                                    /* Desktop 1440 */
-  #home-title{ font-size: 56px; }
-}
-@media (min-width:1024px) and (max-width:1439.98px){          /* Laptop 1024 */
-  #home-title{ font-size: 50px; }
-}
-@media (min-width:768px) and (max-width:1023.98px){           /* Tablet 768 */
-  #home-title{ font-size: 44px; }
-}
-@media (max-width:767.98px){                                  /* Móvil 360 */
-  #home-title{ font-size: 36px; }
-}
-/* ===== end Home H1 tuning ===== */
