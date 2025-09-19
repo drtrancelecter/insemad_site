@@ -196,7 +196,7 @@ a{color:inherit}
 .btn-float.blue{background:#1E88E5}
 .btn-float:hover{filter:brightness(.92); transform:translateY(-1px)}
 
-@media (max-width:820px){ .floating-buttons{right:14px; bottom:28px; top:auto; transform:none} .btn-float{width:52px; height:52px} } }
+@media (max-width:820px){ .floating-buttons{right:14px; bottom:28px; top:auto; transform:none} .btn-float{width:52px; height:52px}  }
 .btn-float.black{background:#0B0B0B}
 .btn-float.blue img{width:20px; height:20px}
 .btn-float img{width:24px; height:24px}
