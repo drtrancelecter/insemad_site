@@ -158,7 +158,7 @@ a{color:inherit}
 @media
 /* CTA — canónico */
 .cta-below{display:flex;justify-content:center;gap: 26px;padding: 44px 0 0}
-.cta-below .cta-btn:hover{ background:#004F52; }
+.cta-below .cta-btn:hover{ background:#023A3D; }
 @media (max-width:820px){
   .cta-below{padding:36px 0 0; gap:16px}
 
@@ -180,9 +180,11 @@ a{color:inherit}
   text-decoration:none; margin:0 6px 10px;
 }
 .whatsapp:hover{ filter:brightness(.96); }
-.cta-below .cta-btn{ background:#02676A; color:#fff; padding:14px 28px; font-size:17px; font-weight:800; letter-spacing:.2px; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,.12); }
+.cta-below .cta-btn{ background:#0A5A5C; color:#fff; padding:14px 28px; font-size:17px; font-weight:800; letter-spacing:.2px; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,.16); display:inline-flex; align-items:center; justify-content:center; line-height:1; }
 
-.cta-below{margin-top:24px}
-@media (max-width:820px){.cta-below{margin-top:18px}}
+.cta-below{margin-top: 38px}
+@media (max-width:820px){.cta-below{margin-top:24px}}
 .hero{background:linear-gradient(180deg,#0A5A5C 0%, #023A3D 100%)}
 .hero{padding-bottom:28px}
+
+.site-footer small{color:#0A5A5C;opacity:.8}
