@@ -107,7 +107,7 @@ a{color:inherit}
 
   .productos-grid{grid-template-columns:1fr}
   .cta-wrapper{gap:16px}
-
+}
 
 /* — Smoothing cross-browser — */
 .topbar{ -moz-osx-font-smoothing: grayscale !important; text-rendering: optimizeLegibility !important; }
@@ -151,7 +151,7 @@ a{color:inherit}
 /* refuerzo de estilo para la píldora WhatsApp dentro del hero */
 .hero 
 .hero-card{ position:relative; }@media
-
+}
 
 
 
@@ -336,4 +336,6 @@ a{color:inherit}
 
   .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
 }
-@media
+@media (max-width:480px){
+  .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
+}
