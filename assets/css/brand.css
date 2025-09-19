@@ -195,4 +195,5 @@ a{color:inherit}
 .btn-float.blue{background:#0A66C2}
 .btn-float:hover{filter:brightness(.92); transform:translateY(-1px)}
 
-@media (max-width:820px){ .floating-buttons{right:14px} .btn-float{width:52px; height:52px} }.btn-float.black{background:#0B0B0B}
+@media (max-width:820px){ .floating-buttons{right:14px} .btn-float{width:52px; height:52px} }
+.btn-float.black{background:#0B0B0B}
