@@ -178,12 +178,7 @@ a.whatsapp{
 a.whatsapp:hover{ transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,.18); filter:brightness(.98); }
 /* refuerzo de estilo para la píldora WhatsApp dentro del hero */
 .hero a.whatsapp{ text-decoration:none !important; }
-.hero-card{ position:relative; }
-.cta-inside{
-  position:absolute; left:50%; bottom:24px; transform:translateX(-50%);
-  display:flex; gap:28px; flex-wrap:nowrap; z-index:2;
-}
-@media
+.hero-card{ position:relative; }@media
 }
 
 
