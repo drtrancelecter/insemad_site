@@ -159,7 +159,10 @@ a{color:inherit}
 /* CTA — canónico */
 .cta-below{display:flex;justify-content:center;gap: 26px;padding: 44px 0 0}
 .cta-below .cta-btn:hover{ background:#023A3D; }
-@media}
+@media (max-width:820px){
+  .cta-below{padding:36px 0 0; gap:16px}
+
+  }
 
 .cta-below + .footer{margin-top:18px}
 
@@ -180,37 +183,23 @@ a{color:inherit}
 .cta-below .cta-btn{ background:#0A5A5C; color:#fff; padding:14px 28px; font-size:17px; font-weight:800; letter-spacing:.2px; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,.16); display:inline-flex; align-items:center; justify-content:center; line-height:1; }
 
 .cta-below{margin-top: 38px}
-@media}
+@media (max-width:820px){.cta-below{margin-top:24px}}
 .hero{background:linear-gradient(180deg,#0A5A5C 0%, #023A3D 100%)}
 .hero{padding-bottom:28px}
 
 .site-footer small{color:#0A5A5C;opacity:.8}
 
 .site-footer .container{text-align:center}
+.floating-buttons{position:fixed; right:24px; bottom: 40px;transform:none; display:flex; flex-direction:column; gap: 20px; z-index:1000}
+.btn-float{width: 60px; height: 60px; border-radius: 20px; display:grid; place-items:center; box-shadow:0 18px 40px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.06)}
+
+.btn-float.blue{background:#0A66C2}
 .btn-float:hover{filter:brightness(.92); transform:translateY(-1px)}
 
-@media/* ==== FAB versión óptima (clonado) ==== */
-.btn-float{
-  position:fixed;
-  right:24px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  width:60px;
-  height:60px;
-  border-radius:50%;
-  z-index:999;
-  box-shadow:0 4px 16px rgba(0,0,0,0.25);
-  transition:transform .2s ease, box-shadow .2s ease;
-}
-.btn-float:hover{ transform:scale(1.05); box-shadow:0 6px 20px rgba(0,0,0,0.35); }
-
-/* Posiciones y colores exactos */
-.btn-float.black{ bottom:128px; background:#000; }
-.btn-float.green{ bottom:64px;  background:#4A752C; }
-.btn-float.blue{  bottom:0;     background:#0A66C2; }
-
-/* Tamaños de los íconos */
-.btn-float.black img{ width:28px; height:auto; }
-.btn-float.green img{ width:32px; height:auto; }
-.btn-float.blue  img{ width:32px; height:auto; }
+@media (max-width:820px){ .floating-buttons{right:14px; bottom: 40px; top:auto; transform:none} .btn-float{width: 60px; height: 60px}  }
+.btn-float.black{background:#0B0B0B}
+.btn-float.blue img{width:16px; height:16px}
+.btn-float img{width:24px; height:24px}
+.btn-float.black img{width: 24px; height: 24px; transform:scaleX(1.12) scaleY(0.90)}
+.btn-float.green img{width:28px; height:28px; transform:rotate(-18deg) scale(1.06)}
+.btn-float.green{background:#56761F}
