@@ -190,7 +190,7 @@ a{color:inherit}
 .site-footer small{color:#0A5A5C;opacity:.8}
 
 .site-footer .container{text-align:center}
-.floating-buttons{position:fixed; right:24px; bottom: 40px;transform:none; display:flex; flex-direction:column; gap: 20px; z-index:1000}
+Jpx; z-index:1000}
 .btn-float{width: 60px; height: 60px; border-radius: 20px; display:grid; place-items:center; box-shadow:0 18px 40px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.06)}
 
 .btn-float.blue{background:#0A66C2}
