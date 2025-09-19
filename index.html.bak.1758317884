@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Productos - INSEMAD SPA</title>
+<title>INSEMAD SPA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/brand.css?v=1758317905">
+<link rel="stylesheet" href="assets/css/brand.css?v=1758316386">
 </head>
 <body>
 
@@ -28,34 +28,29 @@
   </header>
 
 
-<section id="productos" class="hero">
+<section id="inicio" class="hero">
   <div class="hero-inner container">
-    <div class="placeholder-hero" aria-hidden="true"></div>
-    <h1 class="hero-title" style="opacity:.001; user-select:none;">&nbsp;</h1>
-    <div class="hero-card" style="opacity:.001"><div class="ph"></div></div>
-  </div>
-</section>
+    <h1 id="home-title" id="home-title" class="hero-title">Embalajes y Maderas de Exportaci√≥n y<br> Nacionales</h1>
+    <p class="hero-subtitle"><span id="home-bullets">Pallets ∑ Bins ∑ Parrillas ∑ Estibas ∑ Cajones a medida ∑ NIMF-15 ∑ HT ∑ Antihongos</span></p>
 
-<section class="section">
-  <div class="container">
-    <h2 style="margin:0 0 16px 0; color:#0E6668;">Nuestros Productos</h2>
-    <div class="productos-grid">
-      <div class="card"><h3>Pallets</h3><p>Estandarizados y a medida.</p></div>
-      <div class="card"><h3>Parrillas y Tapas</h3><p>Terminaci√≥n robusta.</p></div>
-      <div class="card"><h3>Estructuras Personalizadas</h3><p>Dise√±o a requerimiento.</p></div>
-      <div class="card"><h3>Bins</h3><p>Almacenamiento industrial.</p></div>
-      <div class="card"><h3>Trabajos a pedido</h3><p>Flexibilidad total.</p></div>
-      <div class="card"><h3>Jabas</h3><p>Para m√∫ltiples usos.</p></div>
-    </div>
+    <div class="hero-chips">
+      <span class="chip">FUNGICIDA A BASE DE COBRE</span>
+      <span class="chip">NIMF - 15</span>
+      <span class="chip">PARA USO NACIONALES E INTERNACIONAL</span>
+      <span class="chip">VENTA DE MADERAS</span>
+      <a href="https://wa.me/56912345678" target="_blank" rel="noopener" class="chip whatsapp">Escr√≠benos por WhatsApp</a>
+</div><div class="hero-card">
+  <div class="ph" aria-hidden="true"></div></div>
 
-    <h2 style="margin:32px 0 16px 0; color:#0E6668;">Servicios</h2>
-    <div class="productos-grid">
-      <div class="card"><h3>Lavado de cobre</h3><p>Acabado protector.</p></div>
-      <div class="card"><h3>Desinfecci√≥n antihongos</h3><p>Tratamientos certificados.</p></div>
-      <div class="card"><h3>C√°mara NIMF-15</h3><p>Normativa internacional.</p></div>
     </div>
-  </div>
 </section>
+<div class="cta-wrapper cta-below">
+  <a href="productos.html" class="cta-btn">Ver Productos</a>
+  <a href="certificacion.html" class="cta-btn">Certificaci√≥n</a>
+  <a href="contacto.html" class="cta-btn">Cont√°ctanos</a>
+</div>
+
+<div class="section"><div class="container"></div></div>
 
 
   <footer class="site-footer">
