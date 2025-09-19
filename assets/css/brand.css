@@ -201,5 +201,5 @@ a{color:inherit}
 .btn-float.blue img{width:16px; height:16px}
 .btn-float img{width:24px; height:24px}
 .btn-float.black img{width: 24px; height: 24px; transform:scaleX(1.12) scaleY(0.90)}
-.btn-float.green img{width:28px; height:28px; transform:rotate(-18deg) scale(1.06))}
+.btn-float.green img{width:28px; height:28px; transform:rotate(-18deg) scale(1.06)}
 .btn-float.green{background:#56761F}
