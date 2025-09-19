@@ -312,3 +312,26 @@ a{color:inherit}
   .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
 }
 /* ===== end bullets dot ===== */
+
+/* ==== Bullets: tipografía y no-wrap desktop (override) ==== */
+#home-bullets{
+  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  font-weight:600;
+  letter-spacing:0.01em;  /* tracking +0.01em */
+  line-height:1.35;
+  display:inline-block;
+  text-align:center;
+  margin-top:6px;         /* 6–8 px */
+  margin-bottom:10px;     /* 8–12 px */
+}
+
+/* Desktop / laptop: fuerzo 1 línea y elimino límite de ancho */
+@media (min-width:1024px){
+  #home-bullets{ white-space:nowrap; max-width:none; }
+}
+
+/* Tablet / móvil: permito 1–2 líneas con tope de ancho */
+@media (max-width:1023.98px){
+  #home-bullets{ max-width:62ch; white-space:normal; }
+}
+/* ==== end bullets override ==== */
