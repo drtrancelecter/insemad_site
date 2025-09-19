@@ -337,3 +337,7 @@ a{color:inherit}
   .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
 }
 @media
+/* Bullets desktop: compactar separador para que no corte la línea */
+@media (min-width:1024px){
+  .sep-dot{ margin:0 .45ch; } /* antes .55ch */
+}
