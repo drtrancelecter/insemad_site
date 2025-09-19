@@ -334,3 +334,5 @@ a{color:inherit}
 }
 /* ==== end bullets override ==== */
 @media (max-width:480px){
+  .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
+}
