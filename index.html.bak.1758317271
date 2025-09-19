@@ -3,13 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nosotros - INSEMAD SPA</title>
+<title>INSEMAD SPA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/brand.css?v=1758317362">
+<link rel="stylesheet" href="assets/css/brand.css?v=1758316386">
 </head>
 <body>
+
 
   <header class="topbar">
     <div class="container">
@@ -27,15 +28,29 @@
   </header>
 
 
-<section class="hero">
+<section id="inicio" class="hero">
   <div class="hero-inner container">
-    <div class="placeholder-hero" aria-hidden="true"></div>
-    <h1 class="hero-title">Nosotros</h1>
-    <div class="hero-card"><div class="ph"></div></div>
-  </div>
-</section>
+    <h1 id="home-title" id="home-title" class="hero-title">Embalajes y Maderas de Exportación y<br> Nacionales</h1>
+    <p class="hero-subtitle">Pallets · Bins · Parrillas · Estibas · Cajones a medida · NIMF-15 · HT · Antihongos</p>
 
-<section class="section"><div class="container"><p style="opacity:.8">Contenido editable aquí (estructura inamovible).</p></div></section>
+    <div class="hero-chips">
+      <span class="chip">FUNGICIDA A BASE DE COBRE</span>
+      <span class="chip">NIMF - 15</span>
+      <span class="chip">PARA USO NACIONALES E INTERNACIONAL</span>
+      <span class="chip">VENTA DE MADERAS</span>
+      <a href="https://wa.me/56912345678" target="_blank" rel="noopener" class="chip whatsapp">Escríbenos por WhatsApp</a>
+</div><div class="hero-card">
+  <div class="ph" aria-hidden="true"></div></div>
+
+    </div>
+</section>
+<div class="cta-wrapper cta-below">
+  <a href="productos.html" class="cta-btn">Ver Productos</a>
+  <a href="certificacion.html" class="cta-btn">Certificación</a>
+  <a href="contacto.html" class="cta-btn">Contáctanos</a>
+</div>
+
+<div class="section"><div class="container"></div></div>
 
 
   <footer class="site-footer">
@@ -48,6 +63,7 @@
     <a class="btn-float green" href="tel:+56912345678" title="Llámanos"><img src="assets/svg/phone.svg" alt=""></a>
     <a class="btn-float blue" href="https://www.linkedin.com/company/insemadspa" target="_blank" rel="noopener" title="LinkedIn"><img src="assets/svg/linkedin.svg" alt=""></a>
   </div>
+
 
 <script src="assets/js/main.js"></script>
 </body>

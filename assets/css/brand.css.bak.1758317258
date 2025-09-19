@@ -268,30 +268,3 @@ a{color:inherit}
   #home-title{ font-size: 36px; }
 }
 /* ===== end Home H1 tuning ===== */
-
-/* ===== Home subtitle bullets (Punto_Optimo2) ===== */
-#home-bullets{
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1.35;
-  text-align: center;
-  max-width: 62ch;        /* dentro del rango 56–62ch */
-  margin: 8px auto 12px;  /* arriba 8 / abajo 12 */
-  display: block;         /* asegura comportamiento de bloque centrado */
-}
-
-/* Tamaños por corte */
-@media (min-width:1440px){                       /* Desktop 1440 */
-  #home-bullets{ font-size: 20px; }
-}
-@media (min-width:1024px) and (max-width:1439.98px){ /* Laptop 1024 */
-  #home-bullets{ font-size: 19px; }
-}
-@media (min-width:768px) and (max-width:1023.98px){  /* Tablet 768 */
-  #home-bullets{ font-size: 18px; }
-}
-@media (max-width:767.98px){                     /* Móvil 360 */
-  #home-bullets{ font-size: 16px; }
-}
-/* ===== end Home subtitle bullets ===== */
