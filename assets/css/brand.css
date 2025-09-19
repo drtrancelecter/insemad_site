@@ -193,3 +193,6 @@ a.whatsapp:hover{ transform:translateY(-1px); box-shadow:0 8px 24px rgba(0,0,0,.
 .cta-below + .footer{margin-top:18px}
 
 .cta-below .cta-btn{letter-spacing:.2px}
+
+.cta-below .cta-btn{background:#02676A !important; color:#fff !important;}
+.cta-below .cta-btn:hover{background:#004F52 !important;}
