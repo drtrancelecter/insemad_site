@@ -295,20 +295,3 @@ a{color:inherit}
   #home-bullets{ font-size: 16px; }
 }
 /* ===== end Home subtitle bullets ===== */
-
-/* ===== Bullets: pelotita blanca estilizada ===== */
-.sep-dot{
-  display:inline-block;
-  width:.45em;                   /* ~8–9px sobre 20px de fuente */
-  height:.45em;
-  background:#fff;               /* blanco nítido */
-  border-radius:999px;           /* círculo perfecto */
-  margin:0 .55ch;                /* aire lateral simétrico */
-  vertical-align:middle;
-  transform:translateY(-.08em);  /* centra ópticamente con el texto */
-}
-/* Ajuste fino en móvil (ligeramente más pequeña si fuera necesario) */
-@media (max-width: 480px){
-  .sep-dot{ width:.42em; height:.42em; margin:0 .5ch; }
-}
-/* ===== end bullets dot ===== */
