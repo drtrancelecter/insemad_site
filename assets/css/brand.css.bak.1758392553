@@ -509,16 +509,3 @@ h1.hero-title {
     -moz-osx-font-smoothing:grayscale;
   }
 }
-
-/* ===== HERO BLOCK (Bloque 1) ===== */
-.hero{
-  width:1647px;                /* ancho total medido */
-  height:645.52px;             /* alto exacto */
-  background:#117363A;         /* verde INSEMAD */
-  padding-top:68px;
-  padding-bottom:36px;
-  margin:0 auto;
-  display:block;
-  position:relative;
-  text-align:center;
-}
