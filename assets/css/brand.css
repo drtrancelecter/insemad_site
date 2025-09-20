@@ -489,3 +489,23 @@ h1.hero-title {
 @media (min-width:1440px){
   #home-title{ font-size:54px; }   /* antes 56px */
 }
+
+/* ===== FINAL OVERRIDES (seguras) ===== */
+@media (min-width:1440px){
+  #home-title{ font-size:54px !important; }  /* compacto como la guía */
+}
+
+@media (min-width:1024px){
+  /* Menú un poco más grande y semibold */
+  header.topbar nav.nav ul li > a,
+  header.topbar nav.nav a,
+  header .nav a,
+  .topbar .nav a {
+    font-size:16.5px !important;
+    font-weight:600 !important;
+    letter-spacing:.01em !important;
+    line-height:1.2 !important;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+  }
+}
