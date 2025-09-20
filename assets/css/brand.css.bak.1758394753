@@ -184,6 +184,8 @@ a{color:inherit}
 
 .cta-below{margin-top: 38px}
 @media (max-width:820px){.cta-below{margin-top:24px}}
+.hero{background:linear-gradient(180deg,#0A5A5C 0%, #023A3D 100%)}
+.hero{padding-bottom:28px}
 
 .site-footer small{color:#0A5A5C;opacity:.8}
 
