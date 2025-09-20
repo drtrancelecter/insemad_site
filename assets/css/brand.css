@@ -442,3 +442,14 @@ header ul li > a {
   header ul li > a { font-size: 16px !important; line-height: 1.2 !important; }
 }
 /* ===== end nav menu v2 ===== */
+
+/* ===== Nav menu v3: refuerzo específico para .topbar ===== */
+.topbar .nav a,
+.topbar nav a,
+header.topbar nav.nav a {
+  font-weight: 600 !important;
+  font-size: 18px !important;      /* 17px en tablet, 16px en móvil ya está en v2 */
+  letter-spacing: 0.01em !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
