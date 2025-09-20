@@ -195,6 +195,7 @@ a{color:inherit}
 
 @media (max-width:820px){ .floating-buttons{right:14px; bottom: 40px; top:auto; transform:none} .btn-float{width: 60px; height: 60px}  }
 .btn-float.black{background:#0B0B0B}
+.btn-float.blue img{width:16px; height:16px}
 .btn-float img{width:24px; height:24px}
 .btn-float.black img{width: 24px; height: 24px; transform:scaleX(1.12) scaleY(0.90)}
 
@@ -848,18 +849,4 @@ h1.hero-title {
   filter: brightness(0) invert(1) !important;  /* blanco total */
   display: block;
   margin: auto;
-}
-/* ===== Fix LinkedIn FINAL ===== */
-.floating-buttons .btn-float.blue {
-  width: 60px !important;
-  height: 60px !important;
-  background: #0077B5 !important;   /* color oficial */
-  border-radius: 12px !important;   /* mismo radio que los demás */
-}
-
-.floating-buttons .btn-float.blue img {
-  width: 28px !important;
-  height: 28px !important;
-  display: block !important;
-  margin: auto !important;
 }
