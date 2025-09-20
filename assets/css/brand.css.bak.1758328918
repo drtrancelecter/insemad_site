@@ -352,19 +352,3 @@ a{color:inherit}
 @media (min-width:1024px){
   #home-bullets{ font-size:19px; } /* antes 20px */
 }
-
-/* === Bullets: mantener 1 línea en desktop ancho === */
-@media (min-width:1200px){
-  #home-bullets{
-    white-space: nowrap !important;
-    max-width: none !important;
-    font-size: 18.5px;     /* antes 19–20px, bajamos ~2–7% */
-    letter-spacing: 0em;   /* más compacto */
-    word-spacing: -0.02ch; /* ajuste fino */
-  }
-  .sep-dot{
-    margin: 0 .26ch !important; /* un pelín más cerca */
-    width: .34em !important;
-    height: .34em !important;
-  }
-}
