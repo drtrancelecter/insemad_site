@@ -191,6 +191,7 @@ a{color:inherit}
 .floating-buttons{position:fixed; right:24px; bottom: 40px;transform:none; display:flex; flex-direction:column; gap: 20px; z-index:1000}
 .btn-float{width: 60px; height: 60px; border-radius: 20px; display:grid; place-items:center; box-shadow:0 18px 40px rgba(0,0,0,.12), 0 0 0 1px rgba(0,0,0,.06)}
 
+.btn-float.blue{background:#0A66C2}
 .btn-float:hover{filter:brightness(.92); transform:translateY(-1px)}
 
 @media (max-width:820px){ .floating-buttons{right:14px; bottom: 40px; top:auto; transform:none} .btn-float{width: 60px; height: 60px}  }
@@ -831,22 +832,4 @@ h1.hero-title {
 /* ===== Fix Teléfono color Palosa ===== */
 .floating-buttons .btn-float.green {
   background: #57721C !important;   /* Verde Palosa */
-}
-/* ===== Fix LinkedIn FINAL (Palosa métricas) ===== */
-.floating-buttons .btn-float.blue {
-  width: 53px !important;
-  height: 53px !important;
-  background: #006699 !important;   /* tono Palosa más profundo */
-  border-radius: 6px !important;    /* leve esquinas, no círculo */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.floating-buttons .btn-float.blue img {
-  width: 30px !important;
-  height: 30px !important;
-  filter: brightness(0) invert(1) !important;  /* blanco total */
-  display: block;
-  margin: auto;
 }
