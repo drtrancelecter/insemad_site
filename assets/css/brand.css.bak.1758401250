@@ -199,6 +199,7 @@ a{color:inherit}
 .btn-float.blue img{width:16px; height:16px}
 .btn-float img{width:24px; height:24px}
 .btn-float.black img{width: 24px; height: 24px; transform:scaleX(1.12) scaleY(0.90)}
+.btn-float.green img{width:28px; height:28px; transform:rotate(-18deg) scale(1.06)}
 .btn-float.green{background:#56761F}
 
 /* == FAB minimal, safe override (no media) == */
@@ -217,6 +218,7 @@ a{color:inherit}
 .btn-float.blue { background:#0A66C2 }
 
 .btn-float img{ width:22px; height:22px }
+.btn-float.green img{ width:28px; height:28px; transform:rotate(-18deg) scale(1.06) }
 /* == end FAB == */
 
 /* == FAB minimal, safe override (no media) == */
@@ -235,6 +237,7 @@ a{color:inherit}
 .btn-float.blue { background:#0A66C2 }
 
 .btn-float img{ width:22px; height:22px }
+.btn-float.green img{ width:28px; height:28px; transform:rotate(-18deg) scale(1.06) }
 /* == end FAB == */
 
 /* ===== Home H1 tuning (Punto_Optimo2) ===== */
@@ -816,13 +819,3 @@ h1.hero-title {
   transition: all .18s ease-out;
 }
 /* ===== end floating buttons overrides ===== */
-/* ===== Fix Teléfono FINAL ===== */
-.floating-buttons .btn-float.green img {
-  width: 28px !important;
-  height: 28px !important;
-  transform: none !important;
-  -webkit-transform: none !important;
-  -ms-transform: none !important;
-  display: block !important;
-  margin: auto !important;
-}
