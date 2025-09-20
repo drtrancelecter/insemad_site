@@ -826,11 +826,3 @@ h1.hero-title {
   display: block !important;
   margin: auto !important;
 }
-/* ===== Ajuste Colores Botones FINAL ===== */
-.floating-buttons .btn-float.green {
-  background: #4CAF50 !important;   /* verde vivo referencia */
-}
-
-.floating-buttons .btn-float.blue {
-  background: #0077B5 !important;   /* azul LinkedIn oficial */
-}
