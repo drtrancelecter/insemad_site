@@ -470,22 +470,3 @@ h1.hero-title {
   text-align: center !important;
   margin-bottom: 0.5rem !important;
 }
-
-/* === Ajuste fino rápido: nav y H1 === */
-/* Nav un poco más chico en desktop (sigue 600) */
-@media (min-width:1024px){
-  header nav a,
-  header .menu a,
-  header .navbar a,
-  header .main-nav a,
-  .site-header nav a,
-  header ul li > a {
-    font-size: 16.5px !important;  /* antes 18px */
-    line-height: 1.2 !important;
-  }
-}
-
-/* H1 un pelín más contenido en desktop ancho */
-@media (min-width:1440px){
-  #home-title{ font-size:54px; }   /* antes 56px */
-}
