@@ -888,28 +888,3 @@ a.btn-musgo:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
-/* ===== CTA Buttons Estética INSEMAD ===== */
-a.btn-musgo {
-  background: #0E6658 !important;   /* Verde corporativo sobrio */
-  color: #FFFFFF !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-  font-size: 16px !important;
-  font-weight: 600 !important;
-  padding: 11px 32px !important;
-  border-radius: 6px !important;    /* Cápsula rectangular */
-  display: inline-block;
-  text-align: center;
-  text-decoration: none !important;
-  transition: all 0.25s ease-in-out;
-}
-
-a.btn-musgo:hover {
-  background: #128C7E !important;   /* Verde hover más vivo */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-a.btn-musgo:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
