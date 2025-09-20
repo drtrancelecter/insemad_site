@@ -601,3 +601,13 @@ h1.hero-title {
   margin-bottom: 20px !important;
 }
 /* ===== END HERO FINAL Ajustado ===== */
+/* ===== Pulido seguro de franja inferior ===== */
+.hero{
+  margin-bottom: 40px !important;   /* separa el hero del bloque blanco */
+}
+
+/* Si existe un contenedor blanco específico, le damos mínimos cómodos */
+.hero-white{
+  min-height: 250px !important;
+  padding-bottom: 3rem !important;
+}
