@@ -571,33 +571,3 @@ h1.hero-title {
   border-radius: 6px !important;
 }
 /* ===== END HERO FINAL Punto_Óptimo2 ===== */
-/* ===== HERO FINAL Ajustado Punto_Óptimo2 ===== */
-.hero {
-  width: 100% !important;
-  height: 60vh !important;         /* cubre 55–60% del viewport */
-  min-height: 520px !important;
-  max-height: 860px !important;
-  background: linear-gradient(to bottom, #176B63 0%, #09575B 100%) !important;
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  justify-content: center !important;
-  padding: 0 !important;           /* quitamos padding extra */
-}
-
-.hero h1 {
-  font-size: 40px !important;
-  font-weight: 800 !important;
-  line-height: 1.2 !important;
-  letter-spacing: -0.5px !important;
-  color: #fff !important;
-  margin-bottom: 12px !important;
-}
-
-.hero h2 {
-  font-size: 18px !important;
-  font-weight: 500 !important;
-  color: #ffffffcc !important;
-  margin-bottom: 20px !important;
-}
-/* ===== END HERO FINAL Ajustado ===== */
