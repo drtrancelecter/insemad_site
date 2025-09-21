@@ -1158,3 +1158,8 @@ header.topbar nav.nav a.link {
   font-size: 19px !important;
 }
 
+/* 🎯 INSEMAD SPA: ajuste fino a 18.5px */
+.brand-text {
+  font-size: 18.5px !important;
+}
+
