@@ -1248,3 +1248,11 @@ header.topbar .wrap .brand .brand-text {
   margin-left: 2px !important;
 }
 
+/* 🔧 Acercamiento del logo al texto: elimino separación fantasma */
+.logo-img {
+  margin-right: 2px !important;
+}
+.brand-text#logo-insemad {
+  margin-left: 0 !important;
+}
+
