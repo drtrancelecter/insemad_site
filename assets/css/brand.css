@@ -931,3 +931,14 @@ a.btn-musgo:active {
   margin: 0px 0px 10px 0px !important;
   line-height: 1.2 !important;
 }
+
+/* 🚨 Ultra-especificidad para override total del hero-title */
+section#inicio h1.hero-title.hero-title {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 54px !important;
+  color: #ffffff !important;
+  padding: 0px 12px !important;
+  margin: 0px 0px 10px 0px !important;
+  line-height: 1.2 !important;
+}
