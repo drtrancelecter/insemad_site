@@ -1669,3 +1669,12 @@ header .brand img.logo-img,
 }
 /* Ajuste fino del espacio con el texto */
 header .brand{ gap: 8px !important; }  /* si lo ves muy cerca/lejos, prueba 7px o 9px */
+/* 🪙 Logo: 56px exactos */
+header .brand img.logo-img,
+.topbar .brand img.logo-img{
+  width: 56px !important;
+  height: 56px !important;
+  vertical-align: middle !important;
+}
+/* Ajuste fino del espacio con el texto (toca si lo ves necesario) */
+header .brand{ gap: 8px !important; }  /* prueba 7px o 9px si quieres microajuste */
