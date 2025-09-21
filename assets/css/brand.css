@@ -2059,3 +2059,62 @@ section#nosotros #founder-photo{
 
 /* Mantén el placeholder oculto para que no empuje nada */
 section#nosotros .placeholder-hero{ display:none !important; }
+
+/* === NOSOTROS (ajuste final): más ALTA, leve más ancha, marco fino, sin mover a la izquierda === */
+
+/* Margen superior/inferior preestablecido para que la foto no toque ni exceda el verde */
+section#nosotros.hero{
+  /* misma distancia arriba y abajo dentro de la franja */
+  padding-top: 56px !important;
+  padding-bottom: 56px !important;
+}
+
+/* Mantén la grilla; NO desplazamos a la izquierda */
+section#nosotros .hero-inner{
+  grid-template-columns: 420px 1fr !important; /* 420px aprox. para la foto; crecerá al subir la altura */
+  align-items: start !important;
+  gap: min(8vw, 72px) !important;
+}
+
+/* Marco más fino, sin empuje lateral */
+section#nosotros .about-card{
+  padding: 8px !important;               /* marco afinado */
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 10px 26px rgba(0,0,0,.14) !important;
+  margin-left: 0 !important;             /* neutraliza cualquier empuje previo */
+  justify-self: start !important;
+}
+
+/* La IMAGEN crece en ALTURA (no el marco). Leve más ancha por proporción 3:4 */
+section#nosotros #founder-photo{
+  display: block !important;
+  width: auto !important;
+  /* Altura controlada para no salir de la franja verde: mínimo–preferido–máximo */
+  height: clamp(560px, 64vh, 700px) !important;
+  aspect-ratio: 3 / 4 !important;        /* mantiene proporción de retrato */
+  object-fit: cover !important;
+  border-radius: 12px !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.16) !important;
+}
+
+/* Laptops medianas: mantiene altura alta pero segura */
+@media (max-width: 1200px){
+  section#nosotros #founder-photo{
+    height: clamp(520px, 60vh, 640px) !important;
+  }
+}
+
+/* Tablets/Móviles: centramos y bajamos altura para que no desborde */
+@media (max-width: 900px){
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  section#nosotros .about-card{
+    justify-self: center !important;
+  }
+  section#nosotros #founder-photo{
+    height: clamp(380px, 48vh, 520px) !important;
+  }
+}
