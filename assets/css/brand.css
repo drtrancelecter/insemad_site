@@ -953,3 +953,10 @@ section#inicio.hero {
   flex-direction: column;
   justify-content: center;
 }
+
+/* 🎯 Compactación visual de hero */
+section#inicio.hero {
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
+  min-height: unset !important;
+}
