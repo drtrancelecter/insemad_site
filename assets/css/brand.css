@@ -1580,3 +1580,26 @@ a.cta-btn {
   transform: translateY(-2px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
+/* <RISE-HERO-TO-LINE> parámetros fáciles de ajustar */
+:root{
+  --hero-min: 520px;   /* sube/baja en bloques de 30px si hace falta */
+  --hero-pt: 36px;     /* padding superior del hero */
+  --hero-pb: 44px;     /* padding inferior del hero */
+}
+
+/* Altura/espaciado del bloque verde */
+section#inicio.hero{
+  min-height: var(--hero-min) !important;
+  padding-top: var(--hero-pt) !important;
+  padding-bottom: var(--hero-pb) !important;
+}
+
+/* Tarjeta blanca (slot video) un poco separada del texto */
+section#inicio .hero-card{
+  margin-top: 20px !important;
+}
+
+/* Más separación entre el hero y el grupo de botones inferiores */
+section#inicio + .cta-wrapper{
+  margin-top: 18px !important;
+}
