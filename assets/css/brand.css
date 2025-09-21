@@ -1603,3 +1603,11 @@ section#inicio .hero-card{
 section#inicio + .cta-wrapper{
   margin-top: 18px !important;
 }
+/* Tweak: hero un poco más alto y CTA más bajo */
+section#inicio.hero{
+  min-height: 560px !important;    /* antes ~520px */
+  padding-bottom: 56px !important; /* da aire en la base */
+}
+section#inicio + .cta-wrapper{
+  margin-top: 28px !important;     /* botones un pelín más abajo */
+}
