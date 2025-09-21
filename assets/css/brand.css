@@ -971,3 +971,9 @@ section#inicio.hero {
   min-height: 755px !important;
   height: 755px !important;
 }
+
+/* 🎯 Reducción proporcional: altura hero ajustada (−1/5) */
+section#inicio.hero {
+  min-height: 604px !important;
+  height: 604px !important;
+}
