@@ -1847,3 +1847,60 @@ section#nosotros .hero-card .ph{ height:0 !important; padding:0 !important; disp
   .about-card{ max-width: 560px !important; }
   #founder-photo{ max-width: 380px; }
 }
+
+/* === Nosotros: layout 2 columnas + marco elegante === */
+section#nosotros .hero-inner{
+  display: grid !important;
+  grid-template-columns: 540px 1fr;   /* foto | texto */
+  gap: 36px;
+  align-items: start;
+  padding-top: 48px !important;
+  padding-bottom: 60px !important;
+}
+
+/* Oculta cualquier placeholder que estorbe */
+section#nosotros .placeholder-hero{ display:none !important; }
+
+section#nosotros .about-card{
+  margin: 0 !important;
+  justify-self: start;
+  padding: 18px !important;                  /* marco con paspartú */
+  border-radius: 18px !important;
+  background: #ffffff;
+  /* sombra suave y elegante */
+  box-shadow:
+    0 20px 45px rgba(0,0,0,.14),
+    0 1px 0 rgba(4,92,100,.06) inset;        /* línea interior muy sutil */
+  outline: 1px solid rgba(4,92,100,.08);     /* filito exterior en tu verde */
+}
+
+section#nosotros #founder-photo{
+  display:block;
+  width: 100%;
+  max-width: 380px;                          /* controla el ancho de la imagen */
+  height:auto;
+  border-radius: 14px;
+  object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);     /* leve elevación de la foto */
+}
+
+/* Texto a la derecha */
+section#nosotros .about-text{
+  color: #E9F4F5;                            /* blanco verdoso legible sobre #045C64 */
+  max-width: 720px;
+}
+section#nosotros .about-text h2{
+  margin: 0 0 8px; font-size: 28px; font-weight: 800; letter-spacing: -0.01em;
+}
+section#nosotros .about-text p{
+  margin: 0 0 10px; font-size: 16px; line-height: 1.6; opacity: .95;
+}
+
+/* Responsive: en móvil apila (foto arriba, texto abajo) */
+@media (max-width: 980px){
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  section#nosotros .about-card{ justify-self: center; }
+}
