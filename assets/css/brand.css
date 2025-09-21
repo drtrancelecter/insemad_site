@@ -1148,3 +1148,8 @@ header.topbar nav.nav a.link {
   color: var(--ink) !important;
 }
 
+/* 🎯 INSEMAD SPA: peso ligeramente aumentado a 600 */
+.brand-text {
+  font-weight: 600 !important;
+}
+
