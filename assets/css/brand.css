@@ -1792,3 +1792,38 @@ section#nosotros .about-photo{
 /* Quitar cualquier placeholder residual */
 section#nosotros .hero-card .ph{ height:0 !important; padding:0 !important; display:none !important; }
 
+
+/* ============ NOSOTROS (cápsula vertical) ============ */
+section#nosotros .hero-title { display:none !important; }
+section#nosotros.hero { padding: 28px 0 60px !important; min-height: unset !important; }
+
+/* Texto en el verde (si lo usas) */
+section#nosotros .about-text{
+  max-width: 760px; margin: 10px auto 6px; padding: 0 16px;
+  color: #ffffff; font: 500 15px/1.55 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-align: center;
+}
+
+/* Cápsula vertical para la foto */
+section#nosotros .hero-card{
+  max-width: 420px !important;     /* más angosta */
+  width: 92% !important;
+  min-height: 560px !important;     /* más alta */
+  margin: 16px auto 12px !important;
+  border-radius: 18px !important;
+  background:#fff !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12) !important;
+  overflow:hidden !important;
+  position:relative !important; z-index:1 !important;
+}
+
+/* La foto llenando la cápsula */
+section#nosotros .about-photo{
+  width:100%; height:100%; object-fit:cover; display:block; border-radius:18px;
+  /* Si tu imagen viene horizontal y NECESITAS girarla 90°:
+     transform: rotate(90deg); transform-origin:center; */
+}
+
+/* Quitar cualquier placeholder residual */
+section#nosotros .hero-card .ph{ height:0 !important; padding:0 !important; display:none !important; }
+
