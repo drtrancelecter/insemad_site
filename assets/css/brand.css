@@ -1611,3 +1611,20 @@ section#inicio.hero{
 section#inicio + .cta-wrapper{
   margin-top: 28px !important;     /* botones un pelín más abajo */
 }
+/* Elevar un poco los FABs (floating buttons) */
+.floatingButtons,
+.floating-buttons,
+.fab-stack,
+.social-fab {
+  bottom: 84px !important; /* súbelos ~20px respecto a lo típico (64px) */
+}
+
+/* En móviles, un pelín más para que no choquen con la UI del SO */
+@media (max-width: 820px){
+  .floatingButtons,
+  .floating-buttons,
+  .fab-stack,
+  .social-fab {
+    bottom: 96px !important;
+  }
+}
