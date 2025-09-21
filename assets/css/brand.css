@@ -1642,3 +1642,12 @@ header .brand img.logo-img,
 }
 /* Mantiene la separación texto-logo estable */
 header .brand{ gap: 8px !important; }
+/* 🪙 Logo: 51px exactos */
+header .brand img.logo-img,
+.topbar .brand img.logo-img{
+  width: 51px !important;
+  height: 51px !important;
+  vertical-align: middle !important;
+}
+/* Mantener equilibrio con el texto */
+header .brand{ gap: 8px !important; }
