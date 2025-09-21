@@ -1440,3 +1440,19 @@ section.hero .hero-title,
 section.hero .hero-subtitle{
   color: #ffffff !important;
 }
+
+/* <UNI-HERO> Verde unificado en todos los heroes */
+body section.hero,
+section.hero,
+.hero {
+  background-color: #045C64 !important;
+  background-image: none !important;
+}
+
+/* Asegurar contraste de tipografía dentro del hero */
+section.hero .hero-title,
+section.hero .hero-subtitle,
+section.hero .chip { color: #ffffff !important; }
+
+/* Por si algún hero trae padding raro */
+section.hero { padding-top: 28px !important; padding-bottom: 28px !important; }
