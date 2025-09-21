@@ -1047,3 +1047,11 @@ section#inicio.hero {
   line-height: 1.1 !important;
   letter-spacing: -0.3px !important;
 }
+/* 🧬 Menu ultra compacto y estilizado */
+.topbar .nav a {
+  font-size: 10.6px !important;
+  font-weight: 400 !important;
+  padding: 0 3.5px !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.35px !important;
+}
