@@ -1425,3 +1425,18 @@ section#inicio .hero-card{
   min-height: 180px !important;
 }
 
+
+/* <HERO-COLOR-GLOBAL> Unifica el verde de todas las secciones hero */
+:root{
+  /* Ajusta aquí si quieres otro tono */
+  --hero-bg: #045C64;
+}
+section.hero{
+  background-color: var(--hero-bg) !important;
+}
+
+/* Asegura contraste correcto del texto en cualquier hero */
+section.hero .hero-title,
+section.hero .hero-subtitle{
+  color: #ffffff !important;
+}
