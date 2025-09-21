@@ -1183,3 +1183,7 @@ header.topbar .wrap .brand .brand-text {
   font-size: 18px !important;
 }
 
+/* 🧠 Prioridad máxima: forzar tamaño para INSEMAD SPA */
+.brand-text#logo-insemad {
+  font-size: 18px !important;
+}
