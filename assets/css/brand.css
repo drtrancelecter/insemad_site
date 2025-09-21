@@ -1153,3 +1153,8 @@ header.topbar nav.nav a.link {
   font-weight: 600 !important;
 }
 
+/* 📏 INSEMAD SPA: altura levemente aumentada a 19px */
+.brand-text {
+  font-size: 19px !important;
+}
+
