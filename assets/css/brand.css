@@ -1082,3 +1082,13 @@ header.topbar nav.nav a.link {
   letter-spacing: 0 !important;
   background: yellow !important;
 }
+/* 🎯 Restauración elegante: menú mini con color de la franja verde */
+.topbar .nav a {
+  font-size: 5px !important;
+  font-weight: 400 !important;
+  color: #0c2f33 !important;
+  background: transparent !important;
+  padding: 0 2px !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
