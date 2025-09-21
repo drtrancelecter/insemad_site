@@ -1010,3 +1010,10 @@ section#inicio.hero {
   font-weight: 500;
   letter-spacing: 0.2px;
 }
+
+/* 🔠 Menú topbar: reducción adicional a 12.2px */
+.nav .link {
+  font-size: 12.2px !important;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+}
