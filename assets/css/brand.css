@@ -1273,3 +1273,9 @@ header.topbar .wrap .brand .brand-text {
   padding: 0 !important;
 }
 
+/* 💚 Fix forzado: botones CTA con verde corporativo */
+.btn,
+.btn-main,
+.btn-float.green {
+  background: #4A752C !important;
+}
