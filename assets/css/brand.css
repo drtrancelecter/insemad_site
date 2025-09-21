@@ -1064,3 +1064,12 @@ header.topbar nav.nav a.link {
   line-height: 1.1 !important;
   text-transform: none !important;
 }
+/* 🧨 TEST DE DOMINANCIA: menú rojo y mínimo */
+header.topbar nav.nav a.link {
+  font-size: 5px !important;
+  color: red !important;
+  font-weight: 100 !important;
+  padding: 0 2px !important;
+  letter-spacing: 0 !important;
+  background: yellow !important;
+}
