@@ -998,3 +998,8 @@ section#inicio.hero {
 section#inicio.hero {
   background-color: #2A605A !important;
 }
+
+/* 🎨 Hero color ajustado a azul petróleo elegante (#0E5C66) */
+section#inicio.hero {
+  background-color: #0E5C66 !important;
+}
