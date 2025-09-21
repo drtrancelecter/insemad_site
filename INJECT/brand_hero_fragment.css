@@ -1,0 +1,74 @@
+
+/* 🔁 Inyectado desde patch_hero_elegante.sh */
+.hero {
+  background: linear-gradient(180deg, var(--teal) 0%, var(--teal-dark) 100%);
+  padding: 68px 0 36px 0;
+}
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+.hero-copy {
+  width: 100%;
+  text-align: center;
+}
+.hero-title {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: 0.2px;
+  margin-bottom: 10px;
+}
+.hero-sub {
+  color: #d9f1f3;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+.chip {
+  background: #fff;
+  color: var(--teal);
+  padding: .6rem 1.2rem;
+  border-radius: 28px;
+  font-weight: 700;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
+  white-space: nowrap;
+}
+.btn-wsp {
+  display: inline-block;
+  background: #fff;
+  color: var(--teal);
+  font-weight: 700;
+  padding: .65rem 1rem;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
+  margin-top: 4px;
+}
+.btn-wsp:hover {
+  transform: translateY(-1px);
+}
+.hero-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .16);
+  padding: 8px;
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+}
+.hero-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}

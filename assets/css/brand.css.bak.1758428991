@@ -1497,29 +1497,3 @@ section.hero { padding-top: 28px !important; padding-bottom: 28px !important; }
   stroke: none !important;
   stroke-width: 0 !important;
 }
-
-/* ===== Override CTA botones principales ===== */
-a.cta-btn {
-  background-color: #045C64 !important;  /* Verde oscuro solicitado */
-  color: #FFFFFF !important;
-  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
-  font-size: 17px !important;
-  font-weight: 600 !important;
-  padding: 14px 28px !important;
-  border-radius: 6px !important;
-  display: inline-block;
-  text-align: center;
-  text-decoration: none !important;
-  transition: all 0.25s ease-in-out;
-}
-
-a.cta-btn:hover {
-  background-color: #05717A !important; /* Hover más vivo */
-  transform: translateY(-2px);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-a.cta-btn:active {
-  transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}

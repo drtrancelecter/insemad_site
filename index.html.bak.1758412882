@@ -7,14 +7,14 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/brand.css?v=1758429021">
+<link rel="stylesheet" href="assets/css/brand.css?v=1758405490">
 </head>
-<body>
+<body id="top">
 
 
   <header class="topbar">
     <div class="container">
-      <div class="brand"><img class="logo-img" src="assets/img/logo_insemad-44.png" srcset="assets/img/logo_insemad-88.png 2x, assets/img/logo_insemad-132.png 3x" width="44" height="44" alt="INSEMAD logo"><span class="brand-text" id="logo-insemad">INSEMAD SPA</span></div>
+      <div class="brand"><img class="logo-img" src="assets/img/logo_insemad-44.png" srcset="assets/img/logo_insemad-88.png 2x, assets/img/logo_insemad-132.png 3x" width="44" height="44" alt="INSEMAD logo"><span class="brand-text">INSEMAD SPA</span></div>
       <nav class="nav">
         <a href="index.html">Inicio</a>
         <a href="productos.html">Productos</a>
@@ -31,7 +31,7 @@
 <section id="inicio" class="hero">
   <div class="hero-inner container">
     <h1 id="home-title" id="home-title" class="hero-title">Embalajes y Maderas de Exportación y<br> Nacionales</h1>
-    <p class="hero-subtitle">Pallets · Bins · Parrillas · Estibas · Cajones a medida · NIMF-15 · HT · Antihongos</p>
+    <p class="hero-subtitle"><span id="home-bullets">Pallets <span class="sep-dot" aria-hidden="true"></span> Bins <span class="sep-dot" aria-hidden="true"></span> Parrillas <span class="sep-dot" aria-hidden="true"></span> Estibas <span class="sep-dot" aria-hidden="true"></span> Cajones a medida <span class="sep-dot" aria-hidden="true"></span> NIMF-15 <span class="sep-dot" aria-hidden="true"></span> HT <span class="sep-dot" aria-hidden="true"></span> Antihongos</span></p>
 
     <div class="hero-chips">
       <span class="chip">FUNGICIDA A BASE DE COBRE</span>
