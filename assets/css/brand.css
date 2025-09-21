@@ -1827,3 +1827,23 @@ section#nosotros .about-photo{
 /* Quitar cualquier placeholder residual */
 section#nosotros .hero-card .ph{ height:0 !important; padding:0 !important; display:none !important; }
 
+
+/* === Sección Nosotros: tarjeta vertical y foto del fundador === */
+.about-card{
+  max-width: 520px !important;      /* ancho contenido y elegante */
+  padding: 16px !important;
+  border-radius: 16px !important;
+  background: #ffffff !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12) !important;
+  display: flex; align-items: center; justify-content: center;
+}
+#founder-photo{
+  display: block;
+  width: 100%; max-width: 360px; height: auto;  /* retrato vertical */
+  border-radius: 12px; object-fit: cover;
+  box-shadow: 0 6px 18px rgba(0,0,0,.16);
+}
+@media (min-width: 1024px){
+  .about-card{ max-width: 560px !important; }
+  #founder-photo{ max-width: 380px; }
+}
