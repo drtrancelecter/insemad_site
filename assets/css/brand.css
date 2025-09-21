@@ -1939,3 +1939,17 @@ section#nosotros .about-text{
   }
   section#nosotros .about-card{ justify-self: center; }
 }
+/* — NOSOTROS: empuje extra de la foto hacia la izquierda — */
+@media (min-width: 1024px){
+  section#nosotros .hero-inner{
+    max-width: 1240px;      /* da más “ancho útil” al grid centrado */
+    padding-left: 8px;      /* menos sangría a la izquierda */
+  }
+  section#nosotros .about-card{
+    margin-left: -16px;     /* pequeño empuje negativo hacia el borde */
+  }
+}
+@media (min-width: 1400px){
+  section#nosotros .hero-inner{ max-width: 1320px; }
+  section#nosotros .about-card{ margin-left: -24px; }
+}
