@@ -1279,3 +1279,9 @@ header.topbar .wrap .brand .brand-text {
 .btn-float.green {
   background: #4A752C !important;
 }
+/* 💀 Test destructor: todo btn-main se vuelve negro */
+.btn-main {
+  background: black !important;
+  border: 3px solid red !important;
+  color: white !important;
+}
