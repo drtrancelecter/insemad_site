@@ -1345,3 +1345,36 @@ section#inicio h1.hero-title.hero-title { font-size: 22px !important; font-weigh
 section#inicio .hero-subtitle { font-size: 14px !important; font-weight: 500 !important; line-height: 1.4 !important; text-align: center !important; color: rgba(255,255,255,0.92) !important; margin: 4px 0 8px !important; }
 section#inicio .hero-chips .chip { font-size: 12px !important; padding: 4px 10px !important; border-radius: 16px !important; }
 
+
+/* <0001FA10> Hero-card compacto (slot video) */
+section#inicio .hero-card{
+  max-width: 720px !important;      /* antes 860–980px */
+  width: 92% !important;            /* respaldo en móviles */
+  min-height: 180px !important;     /* antes 220–280px */
+  margin: 10px auto 28px !important;/* pegado al texto */
+  border-radius: 14px !important;
+  background: #fff !important;
+  box-shadow: 0 8px 22px rgba(0,0,0,.12) !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* placeholder interno sin altura forzada */
+section#inicio .hero-card .ph{
+  height: 0 !important;
+  padding: 0 !important;
+}
+
+/* Desktop: un poco más angosto para look elegante */
+@media (min-width: 1200px){
+  section#inicio .hero-card{ max-width: 680px !important; }
+}
+
+/* Tablets: que respire, sin crecer de más */
+@media (max-width: 820px){
+  section#inicio .hero-card{
+    max-width: 640px !important;
+    min-height: 170px !important;
+    margin: 8px auto 24px !important;
+  }
+}
