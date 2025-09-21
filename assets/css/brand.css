@@ -1324,3 +1324,24 @@ section#inicio h1.hero-title.hero-title {
   padding: 4px 10px !important;
   border-radius: 16px !important;
 }
+
+/* 🧯 Visibilidad y capas forzadas del bloque hero */
+section#inicio .hero-inner,
+section#inicio .hero-title,
+section#inicio .hero-subtitle,
+section#inicio .hero-chips,
+section#inicio .hero-chips .chip {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* 🧱 Asegurar jerarquía de capas: texto por encima, tarjeta debajo */
+section#inicio .hero-inner { position: relative !important; z-index: 2 !important; }
+section#inicio .hero-card  { position: relative !important; z-index: 1 !important; margin-top: 16px !important; }
+
+/* 📏 Mínimos legibles (ultra compacto) */
+section#inicio h1.hero-title.hero-title { font-size: 22px !important; font-weight: 700 !important; line-height: 1.25 !important; text-align: center !important; margin: 8px 0 6px !important; padding-top: 12px !important; color: #ffffff !important; }
+section#inicio .hero-subtitle { font-size: 14px !important; font-weight: 500 !important; line-height: 1.4 !important; text-align: center !important; color: rgba(255,255,255,0.92) !important; margin: 4px 0 8px !important; }
+section#inicio .hero-chips .chip { font-size: 12px !important; padding: 4px 10px !important; border-radius: 16px !important; }
+
