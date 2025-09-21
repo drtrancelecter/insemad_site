@@ -1003,3 +1003,10 @@ section#inicio.hero {
 section#inicio.hero {
   background-color: #0E5C66 !important;
 }
+
+/* 🔠 Menú topbar: reducción de tamaño */
+.nav .link {
+  font-size: 14px !important;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
