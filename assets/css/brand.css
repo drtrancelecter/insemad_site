@@ -1628,3 +1628,8 @@ section#inicio + .cta-wrapper{
     bottom: 96px !important;
   }
 }
+/* 🔤 Brand: un pelín más grande */
+.brand-text#logo-insemad{
+  font-size: 16px !important;   /* antes ~15px */
+  line-height: 1.1 !important;  /* mantiene la alineación con el logo */
+}
