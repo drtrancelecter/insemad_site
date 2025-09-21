@@ -1256,3 +1256,20 @@ header.topbar .wrap .brand .brand-text {
   margin-left: 0 !important;
 }
 
+/* 🧠 Eliminación de separación fantasma entre logo y texto */
+.brand {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  gap: 0 !important;
+  padding: 0 !important;
+}
+.logo-img {
+  margin-right: 4px !important;
+  padding: 0 !important;
+}
+#logo-insemad {
+  margin-left: 0 !important;
+  padding: 0 !important;
+}
+
