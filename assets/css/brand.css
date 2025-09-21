@@ -1055,3 +1055,12 @@ section#inicio.hero {
   line-height: 1.05 !important;
   letter-spacing: -0.35px !important;
 }
+/* 🛠️ Fuerza bruta sobre menú: tamaño, grosor, espaciado */
+header.topbar nav.nav a.link {
+  font-size: 10.2px !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.5px !important;
+  padding: 0 3px !important;
+  line-height: 1.1 !important;
+  text-transform: none !important;
+}
