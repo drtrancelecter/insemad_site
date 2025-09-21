@@ -1378,3 +1378,50 @@ section#inicio .hero-card .ph{
     margin: 8px auto 24px !important;
   }
 }
+
+/* <0001FA12> Re-orden hero: ancho, centrado y chips como píldoras inline */
+section#inicio .hero-inner{
+  max-width: 980px !important;
+  margin: 0 auto !important;
+  padding-top: 8px !important;
+  text-align: center !important;
+}
+
+/* Contenedor de chips centrado y con gap */
+section#inicio .hero-chips{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  margin: 10px 0 12px !important;
+}
+
+/* Chips en modo píldora inline (reversa del display:block anterior) */
+section#inicio .hero-chips .chip{
+  display: inline-flex !important;
+  align-items: center !important;
+  width: auto !important;
+  min-width: 0 !important;
+  padding: 6px 12px !important;
+  border-radius: 999px !important;
+  line-height: 1.2 !important;
+  background: rgba(255,255,255,0.08) !important;
+  border: 1.5px solid rgba(255,255,255,0.45) !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 2px rgba(0,0,0,.06) inset !important;
+}
+
+/* Botón WhatsApp como chip consistente */
+section#inicio .hero-chips .chip.whatsapp{
+  background: #fff !important;
+  color: #0a3b3e !important;   /* combina con tu verde oscuro */
+  border-color: #fff !important;
+}
+
+/* Tarjeta (slot video) pegada al bloque de chips */
+section#inicio .hero-card{
+  margin: 12px auto 28px !important;  /* más arriba y centrada */
+  max-width: 720px !important;
+  min-height: 180px !important;
+}
+
