@@ -960,3 +960,8 @@ section#inicio.hero {
   padding-bottom: 28px !important;
   min-height: unset !important;
 }
+
+/* 🚫 Ocultar temporalmente todo el contenido de #inicio */
+section#inicio.hero > * {
+  display: none !important;
+}
