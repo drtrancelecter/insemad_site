@@ -1904,3 +1904,38 @@ section#nosotros .about-text p{
   }
   section#nosotros .about-card{ justify-self: center; }
 }
+
+/* === NOSOTROS: forzar orden foto (izq) / texto (der) === */
+section#nosotros .hero-inner{
+  /* ya tenías grid; ahora definimos áreas explícitas */
+  grid-template-columns: 540px 1fr;
+  grid-template-areas: "photo text";
+  justify-items: start;              /* alinea el contenido de cada celda al inicio */
+  max-width: 1100px;                 /* ancho cómodo centrado */
+  margin: 0 auto;
+  padding: 48px 24px 60px;
+}
+section#nosotros .about-card{ grid-area: photo; }   /* FOTO a la izquierda */
+section#nosotros .about-text{
+  grid-area: text;                   /* TEXTO a la derecha */
+  align-self: center;                /* céntralo verticalmente respecto a la foto */
+}
+
+/* Ajuste fino en desktop grande: reparte mejor el ancho */
+@media (min-width: 1100px){
+  section#nosotros .hero-inner{
+    grid-template-columns: 520px 560px;
+  }
+}
+
+/* Responsive: apila (foto arriba, texto abajo) */
+@media (max-width: 980px){
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "photo"
+      "text";
+    gap: 20px;
+  }
+  section#nosotros .about-card{ justify-self: center; }
+}
