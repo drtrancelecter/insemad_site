@@ -913,3 +913,21 @@ a.btn-musgo:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
+/* ✅ Corrección exacta para .hero-title según validación visual */
+.hero-title {
+  font-size: 44px !important;
+  margin: 0 0 10px 0 !important;
+  padding: 0 !important;
+}
+
+/* 🧩 Ajuste quirúrgico definitivo para hero-title */
+.hero-title {
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 54px !important;
+  color: #ffffff !important;
+  padding: 0px 12px !important;
+  margin: 0px 0px 10px 0px !important;
+  line-height: 1.2 !important;
+}
