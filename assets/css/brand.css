@@ -1715,3 +1715,17 @@ header.topbar{
 }
 /* Evita solapes que oculten la línea */
 section#inicio.hero { margin-top: 0 !important; }
+/* === Header hairline verde (opción B) ========================= */
+:root { --hero-green: #045C64; } /* tu verde principal */
+
+/* Asegura que el hero usa el mismo color (por si otra regla lo pisa) */
+section#inicio.hero { background-color: var(--hero-green) !important; }
+
+/* Línea fina de 1px bajo el header en el mismo verde */
+header.topbar{
+  border-bottom: none !important;
+  box-shadow: 0 1px 0 0 var(--hero-green) !important; /* hairline 1px */
+}
+
+/* Evita solapes que oculten la línea */
+section#inicio.hero { margin-top: 0 !important; }
