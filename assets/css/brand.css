@@ -1030,3 +1030,11 @@ section#inicio.hero {
   padding: 0 6px !important;
   line-height: 1.2 !important;
 }
+/* 🎯 Menú finalísimo: ultra compacto tipo superior */
+.topbar .nav a {
+  font-size: 11.8px !important;
+  font-weight: 500 !important;
+  padding: 0 5px !important;
+  line-height: 1.15 !important;
+  letter-spacing: -0.2px !important;
+}
