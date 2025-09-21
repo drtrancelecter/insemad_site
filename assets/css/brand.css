@@ -965,3 +965,9 @@ section#inicio.hero {
 section#inicio.hero > * {
   display: none !important;
 }
+
+/* 🎯 Altura fija óptima para hero (basado en vista_elegante) */
+section#inicio.hero {
+  min-height: 755px !important;
+  height: 755px !important;
+}
