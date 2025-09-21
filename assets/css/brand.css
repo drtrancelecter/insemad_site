@@ -1017,3 +1017,9 @@ section#inicio.hero {
   font-weight: 500;
   letter-spacing: 0.15px;
 }
+/* 📏 Menú: letras reducidas a 14px y padding compacto */
+.topbar .nav a {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  padding: 0 10px !important;
+}
