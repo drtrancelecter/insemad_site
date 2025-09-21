@@ -988,3 +988,8 @@ section#inicio.hero {
 section#inicio.hero {
   background-color: #077297 !important;
 }
+
+/* 🎨 Fondo hero actualizado a verde sobrio (#204A46) */
+section#inicio.hero {
+  background-color: #204A46 !important;
+}
