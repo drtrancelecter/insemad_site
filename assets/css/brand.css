@@ -1222,3 +1222,9 @@ header.topbar .wrap .brand .brand-text {
   font-weight: 500 !important;
 }
 
+/* 🧱 Escalado del logo INSEMAD SPA */
+.logo-img {
+  width: 52px !important;
+  height: 52px !important;
+}
+
