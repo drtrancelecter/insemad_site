@@ -1456,3 +1456,44 @@ section.hero .chip { color: #ffffff !important; }
 
 /* Por si algún hero trae padding raro */
 section.hero { padding-top: 28px !important; padding-bottom: 28px !important; }
+/* <FIX-FAB-BORDERS> Quita delineado/halo negro en FABs: LinkedIn + Teléfono */
+.btn-float.green,                  /* Teléfono (clase histórica) */
+.btn-float.blue,                   /* LinkedIn (clase histórica) */
+.floatingButtons a[href*="linkedin.com"],
+.floatingButtons a[href^="tel:"],
+.floatingButtons a.phone,
+.floatingButtons a.linkedin {
+  border: none !important;
+  border-color: transparent !important;
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important; /* por si usaban drop-shadow */
+}
+
+/* Estados interactivos sin borde/halo */
+.btn-float.green:hover,
+.btn-float.green:active,
+.btn-float.green:focus,
+.btn-float.blue:hover,
+.btn-float.blue:active,
+.btn-float.blue:focus,
+.floatingButtons a[href*="linkedin.com"]:hover,
+.floatingButtons a[href*="linkedin.com"]:active,
+.floatingButtons a[href*="linkedin.com"]:focus,
+.floatingButtons a[href^="tel:"]:hover,
+.floatingButtons a[href^="tel:"]:active,
+.floatingButtons a[href^="tel:"]:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Si el “delineado” venía del SVG interno */
+.btn-float.green svg,
+.btn-float.blue svg,
+.floatingButtons a svg,
+.floatingButtons a svg * {
+  stroke: none !important;
+  stroke-width: 0 !important;
+}
