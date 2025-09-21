@@ -1173,3 +1173,8 @@ header.topbar nav.nav a.link {
   font-size: 18px !important;
 }
 
+/* 🧠 INSEMAD SPA: fuerza bruta a 18px */
+header.topbar .wrap .brand .brand-text {
+  font-size: 18px !important;
+}
+
