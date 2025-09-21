@@ -1687,3 +1687,18 @@ header .brand img.logo-img,
 }
 /* Ajuste fino del espacio con el texto */
 header .brand{ gap: 8px !important; }  /* si lo ves muy cerca/lejos, prueba 7px o 9px */
+/* ⬇️ Bajar CTA del hero a la línea marcada */
+section#inicio .cta-below{
+  margin-top: 90px !important;   /* ajusta fino: 80–110px según prefieras */
+  padding-top: 0 !important;
+}
+
+/* Un poco más de “aire” al fondo del hero para que no quede apretado */
+section#inicio.hero{
+  padding-bottom: 48px !important;  /* sube/baja si hace falta */
+}
+
+/* En pantallas grandes baja un pelín más para mantener proporción */
+@media (min-width: 1200px){
+  section#inicio .cta-below{ margin-top: 110px !important; }
+}
