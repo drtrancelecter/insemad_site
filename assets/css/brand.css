@@ -1297,3 +1297,30 @@ a.cta-btn {
   border: 2px solid #56761F !important;
   color: #ffffff !important;
 }
+
+/* 🧼 Estilo ultra compacto para hero verde */
+section#inicio h1.hero-title.hero-title {
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  margin: 8px 0 !important;
+  padding-top: 12px !important;
+  color: #ffffff !important;
+}
+
+.hero-subtitle {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+  text-align: center !important;
+  color: rgba(255,255,255,0.9) !important;
+  margin: 6px 0 8px 0 !important;
+}
+
+.hero-chips .chip,
+.hero-chips .chip.whatsapp {
+  font-size: 12px !important;
+  padding: 4px 10px !important;
+  border-radius: 16px !important;
+}
