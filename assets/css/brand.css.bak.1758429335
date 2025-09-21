@@ -1523,11 +1523,3 @@ a.cta-btn:active {
   transform: translateY(0);
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
-
-/* ===== Limpieza borde CTA ===== */
-a.cta-btn {
-  background-color: #045C64 !important;   /* Verde oscuro */
-  border: none !important;               /* Elimina borde */
-  box-shadow: none !important;           /* Elimina sombra rara */
-  color: #FFFFFF !important;
-}
