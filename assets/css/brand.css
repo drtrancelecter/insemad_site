@@ -1651,3 +1651,12 @@ header .brand img.logo-img,
 }
 /* Mantener equilibrio con el texto */
 header .brand{ gap: 8px !important; }
+/* 🪙 Logo: 52px exactos */
+header .brand img.logo-img,
+.topbar .brand img.logo-img{
+  width: 52px !important;
+  height: 52px !important;
+  vertical-align: middle !important;
+}
+/* Ajuste fino del espacio con el texto (opcional) */
+header .brand{ gap: 8px !important; }  /* prueba 7px o 9px si lo quieres más pegado/separado */
