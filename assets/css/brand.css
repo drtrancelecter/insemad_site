@@ -1228,3 +1228,13 @@ header.topbar .wrap .brand .brand-text {
   height: 52px !important;
 }
 
+/* 🎯 Ajuste fino: tamaño 48px + contraste mejorado */
+.logo-img {
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+}
+
