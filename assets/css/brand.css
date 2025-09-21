@@ -1212,3 +1212,8 @@ header.topbar .wrap .brand .brand-text {
   font-size: 15px !important;
   color: red !important;
 }
+/* 🎯 Color restaurado: INSEMAD SPA a 15px con tono original */
+.brand-text#logo-insemad {
+  font-size: 15px !important;
+  color: var(--ink) !important;
+}
