@@ -2118,3 +2118,21 @@ section#nosotros #founder-photo{
     height: clamp(380px, 48vh, 520px) !important;
   }
 }
+
+/* ===== Sección Nosotros – Foto Fundador ===== */
+#founder-photo {
+  display: block;
+  margin: 40px auto 60px 40px;   /* margen superior, inferior, izq */
+  max-width: 420px;              /* ancho fijo */
+  border-radius: 10px;           /* bordes redondeados */
+  background: #ffffff;           /* fondo blanco estilizado */
+  padding: 8px;                  /* marco interior blanco */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* sombra suave */
+}
+
+.hero-card.about-card {
+  background: none !important;   /* eliminar fondo verde */
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
