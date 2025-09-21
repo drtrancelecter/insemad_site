@@ -1192,3 +1192,8 @@ header.topbar .wrap .brand .brand-text {
   font-size: 17px !important;
   color: red !important;
 }
+/* 🎯 Estilo final de prueba: INSEMAD SPA en #0c2f33 y 17px */
+.brand-text#logo-insemad {
+  font-size: 17px !important;
+  color: #0c2f33 !important;
+}
