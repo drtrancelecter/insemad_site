@@ -1023,3 +1023,10 @@ section#inicio.hero {
   font-weight: 500 !important;
   padding: 0 10px !important;
 }
+/* 🎯 Menu final: replicando diseño superior compacto */
+.topbar .nav a {
+  font-size: 12.5px !important;
+  font-weight: 500 !important;
+  padding: 0 6px !important;
+  line-height: 1.2 !important;
+}
