@@ -942,3 +942,14 @@ section#inicio h1.hero-title.hero-title {
   margin: 0px 0px 10px 0px !important;
   line-height: 1.2 !important;
 }
+
+/* 🎯 Blindaje visual para hero verde estilo versión óptima */
+section#inicio.hero {
+  background: #17363A !important;
+  padding-top: 68px !important;
+  padding-bottom: 36px !important;
+  min-height: 545px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
