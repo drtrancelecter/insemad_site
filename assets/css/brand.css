@@ -983,3 +983,8 @@ section#inicio.hero {
   min-height: 483px !important;
   height: 483px !important;
 }
+
+/* 🎨 Fondo hero actualizado al estilo Palosa.de (#077297) */
+section#inicio.hero {
+  background-color: #077297 !important;
+}
