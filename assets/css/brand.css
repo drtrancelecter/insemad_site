@@ -1092,3 +1092,20 @@ header.topbar nav.nav a.link {
   letter-spacing: 0 !important;
   text-transform: none !important;
 }
+/* 🎯 Ajustes de nitidez y contraste en branding superior */
+
+.logo-img {
+  width: 44px !important;
+  height: 44px !important;
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+  filter: contrast(115%) brightness(105%) !important;
+}
+
+.brand-text {
+  font-weight: 700 !important;
+  color: #0c2f33 !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 0.2px !important;
+}
