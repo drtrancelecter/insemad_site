@@ -1123,3 +1123,10 @@ header.topbar nav.nav a.link {
   image-rendering: auto !important;
   object-fit: contain !important;
 }
+/* 🔻 Mínimo profesional legible: INSEMAD SPA reducido */
+.brand-text {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  color: #143c3c !important;
+}
