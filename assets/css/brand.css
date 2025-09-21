@@ -1243,3 +1243,8 @@ header.topbar .wrap .brand .brand-text {
   margin-right: 4px !important;
 }
 
+/* 🎯 Posicionamiento fino del logo: justo antes de la “I” */
+.logo-img {
+  margin-left: 2px !important;
+}
+
