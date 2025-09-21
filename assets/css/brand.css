@@ -2015,3 +2015,47 @@ section#nosotros #founder-photo{
   }
   section#nosotros #founder-photo{ max-width: 320px !important; }
 }
+
+/* =========================
+   NOSOTROS – Layout a la izquierda fijo + marco elegante
+   ========================= */
+section#nosotros.hero{
+  /* misma distancia arriba/abajo (elige 88px; puedes afinar) */
+  padding-top: 88px !important;
+  padding-bottom: 88px !important;
+}
+
+/* La fila ocupa todo el ancho y arranca a la izquierda con padding chico */
+section#nosotros .hero-inner{
+  max-width: none !important;                 /* que no se centre por ancho máximo */
+  width: 100% !important;
+  margin: 0 auto !important;
+  padding-left: clamp(12px, 4vw, 56px) !important;
+  padding-right: clamp(12px, 3vw, 40px) !important;
+
+  display: grid !important;
+  grid-template-columns: 420px minmax(24px, 5vw) 1fr !important; /* foto | separación | texto */
+  align-items: start !important;
+  column-gap: min(5vw, 56px) !important;
+}
+
+/* La tarjeta (marco) queda clavada al inicio, sin márgenes “centradores” */
+section#nosotros .about-card{
+  justify-self: start !important;
+  margin: 0 !important;               /* elimina márgenes heredados */
+  transform: translateX(-18px);       /* empuje fino a la izquierda */
+}
+
+/* Foto: alto un poco mayor para tu referencia */
+section#nosotros #founder-photo{
+  max-width: 420px !important;        /* ancho del retrato dentro del marco */
+  height: auto !important;
+}
+
+/* En pantallas XL la acercamos un pelín más a la izquierda */
+@media (min-width: 1280px){
+  section#nosotros .about-card{ transform: translateX(-28px); }
+}
+
+/* Mantén el placeholder oculto para que no empuje nada */
+section#nosotros .placeholder-hero{ display:none !important; }
