@@ -1073,3 +1073,12 @@ header.topbar nav.nav a.link {
   letter-spacing: 0 !important;
   background: yellow !important;
 }
+/* 🧨 Selector absoluto para forzar estilo sobre el menú superior */
+.topbar .nav a {
+  font-size: 5px !important;
+  color: red !important;
+  font-weight: 100 !important;
+  padding: 0 2px !important;
+  letter-spacing: 0 !important;
+  background: yellow !important;
+}
