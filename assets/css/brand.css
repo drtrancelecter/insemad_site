@@ -977,3 +977,9 @@ section#inicio.hero {
   min-height: 604px !important;
   height: 604px !important;
 }
+
+/* 🎯 Altura reducida aún más: compactación a 483px */
+section#inicio.hero {
+  min-height: 483px !important;
+  height: 483px !important;
+}
