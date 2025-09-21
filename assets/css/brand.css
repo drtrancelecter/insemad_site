@@ -1130,3 +1130,21 @@ header.topbar nav.nav a.link {
   letter-spacing: 0 !important;
   color: #143c3c !important;
 }
+/* 🧪 Intercambio visual: estilos .brand-text ⇄ .nav a */
+
+/* Forzamos .brand-text (INSEMAD SPA) a verse como los enlaces del menú */
+.brand-text {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  color: var(--ink) !important;
+}
+
+/* Forzamos .nav a (menú) a verse como el antiguo .brand-text */
+.topbar .nav a {
+  font-size: 17px !important;
+  font-weight: 900 !important;
+  letter-spacing: .01em !important;
+  color: var(--ink) !important;
+}
+
