@@ -1953,3 +1953,65 @@ section#nosotros .about-text{
   section#nosotros .hero-inner{ max-width: 1320px; }
   section#nosotros .about-card{ margin-left: -24px; }
 }
+/* ============ NOSOTROS — layout 2 columnas y empuje a la izquierda ============ */
+/* Top/Bottom iguales en la franja verde (proporcionalidad) */
+section#nosotros.hero{
+  padding: 72px 0 72px !important;  /* mismo margen arriba y abajo */
+}
+
+/* Dos columnas: retrato (izq) + espacio para texto (der) */
+section#nosotros .hero-inner{
+  display: grid !important;
+  grid-template-columns: 420px 1fr;   /* ancho fijo del retrato + columna de texto */
+  column-gap: 48px;
+  align-items: start;
+  max-width: 1240px;                  /* campo ancho para poder empujar bien */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Tarjeta de la foto: empuje fuerte hacia la izquierda */
+section#nosotros .about-card{
+  justify-self: start;                         /* se alinea al extremo izquierdo del grid */
+  margin-left: clamp(-240px, -16vw, -300px);   /* empuje “casi pegado” a la izquierda */
+}
+
+/* Foto más alta (un poco más grande) */
+section#nosotros #founder-photo{
+  max-width: 420px !important;   /* sube desde ~380 → 420px */
+  height: auto !important;
+}
+
+/* Marco un poco más elegante (match con palosa vibe) */
+section#nosotros .about-card{
+  padding: 14px !important;
+  border-radius: 18px !important;
+  background: #ffffff;
+  box-shadow:
+    0 14px 36px rgba(0,0,0,.16),
+    0 0 0 1px rgba(0,0,0,.04);
+}
+section#nosotros #founder-photo{
+  border-radius: 14px !important;
+  box-shadow: 0 6px 18px rgba(0,0,0,.14);
+}
+
+/* Responsivo: en tablets reducimos un poco el empuje y el ancho */
+@media (max-width: 1200px){
+  section#nosotros .about-card{ margin-left: clamp(-160px, -10vw, -220px); }
+  section#nosotros #founder-photo{ max-width: 380px !important; }
+}
+
+/* En móviles, centrado normal */
+@media (max-width: 820px){
+  section#nosotros .hero-inner{
+    display: block !important;
+    max-width: 680px;
+    padding: 0 16px;
+  }
+  section#nosotros .about-card{
+    margin-left: 0 !important;
+    margin-right: auto;
+  }
+  section#nosotros #founder-photo{ max-width: 320px !important; }
+}
