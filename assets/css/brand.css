@@ -1729,3 +1729,7 @@ header.topbar{
 
 /* Evita solapes que oculten la línea */
 section#inicio.hero { margin-top: 0 !important; }
+/* ↑ Hairline 2px bajo el header (override final) */
+header.topbar{
+  box-shadow: 0 2px 0 0 var(--hero-green) !important;
+}
