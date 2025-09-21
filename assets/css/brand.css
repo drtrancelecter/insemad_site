@@ -59,7 +59,7 @@ a{color:inherit}
   display:flex; justify-content:center; gap:28px; padding-bottom:48px;
 }
 .cta-btn{
-  background:#02676A; color:#fff; border:0; cursor:pointer;
+  background:#02676A; color:#fff; border: 2px solid #000000 !important;
   border-radius:10px; height:40px; padding:0 32px;
   font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   font-weight:600; font-size:16px; letter-spacing:.25px; text-decoration:none;
@@ -598,13 +598,13 @@ h1.hero-title {
 .btn-float.black{
   --fab-offset: 148px; /* 60 + 14 + 60 + 14 */
   background: #000000 !important;
-  border: 0 !important;
+  border: 2px solid #000000 !important;
 }
 /* LinkedIn — azul oficial */
 .btn-float.blue{
   --fab-offset: 74px; /* 60 + 14 */
   background: #0077B5 !important;
-  border: 0 !important;
+  border: 2px solid #000000 !important;
 }
 /* Flecha arriba — blanco con borde negro */
 .btn-float.up{
@@ -683,7 +683,7 @@ h1.hero-title {
 /* Variante explícita “flecha arriba” en blanco con borde negro  */
 .floating-buttons .btn-float.up{
   background: #FFFFFF;
-  border: 2px solid #000000;
+  border: 2px solid #000000 !important;
   color: #000000;
 }
 
@@ -725,7 +725,7 @@ h1.hero-title {
   align-items:center !important;
   justify-content:center !important;
   box-shadow:0 6px 16px rgba(0,0,0,.20) !important;
-  border:none !important;
+  border: 2px solid #000000 !important;
   padding:0 !important;
   margin:0 !important;
 }
@@ -777,7 +777,7 @@ h1.hero-title {
   align-items:center !important;
   justify-content:center !important;
   box-shadow:0 6px 16px rgba(0,0,0,.20) !important;
-  border:none !important;
+  border: 2px solid #000000 !important;
   padding:0 !important;
   margin:0 !important;
 }
@@ -986,22 +986,22 @@ section#inicio.hero {
 
 /* 🎨 Fondo hero actualizado al estilo Palosa.de (#077297) */
 section#inicio.hero {
-  background-color: #077297 !important;
+  background-color: #045c64 !important;
 }
 
 /* 🎨 Fondo hero actualizado a verde sobrio (#204A46) */
 section#inicio.hero {
-  background-color: #204A46 !important;
+  background-color: #045c64 !important;
 }
 
 /* 🎨 Hero color verde sobrio aclarado (#2A605A) */
 section#inicio.hero {
-  background-color: #2A605A !important;
+  background-color: #045c64 !important;
 }
 
 /* 🎨 Hero color ajustado a azul petróleo elegante (#0E5C66) */
 section#inicio.hero {
-  background-color: #0E5C66 !important;
+  background-color: #045c64 !important;
 }
 
 /* 🔠 Menú topbar: reducción de tamaño */
@@ -1282,6 +1282,18 @@ header.topbar .wrap .brand .brand-text {
 /* 💀 Test destructor: todo btn-main se vuelve negro */
 .btn-main {
   background: black !important;
-  border: 3px solid red !important;
+  border: 2px solid #000000 !important;
   color: white !important;
+}
+
+a.cta-btn {
+  background-color: #4A752C !important;
+  border: 2px solid #4A752C !important;
+  color: #ffffff !important;
+}
+
+a.cta-btn {
+  background-color: #56761F !important;
+  border: 2px solid #56761F !important;
+  color: #ffffff !important;
 }
