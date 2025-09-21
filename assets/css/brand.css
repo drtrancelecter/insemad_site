@@ -1238,3 +1238,8 @@ header.topbar .wrap .brand .brand-text {
   image-rendering: pixelated;
 }
 
+/* 🎯 Reducción de separación: logo más cercano a INSEMAD SPA */
+.logo-img {
+  margin-right: 4px !important;
+}
+
