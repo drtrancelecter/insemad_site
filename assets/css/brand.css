@@ -1109,3 +1109,17 @@ header.topbar nav.nav a.link {
   font-size: 1.4rem !important;
   letter-spacing: 0.2px !important;
 }
+/* 🧩 Ajuste final del texto INSEMAD SPA: menor tamaño + peso 600 */
+.brand-text {
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0 !important;
+  color: #143c3c !important;
+}
+/* 🖼️ Ajuste fino del logo: tamaño más compacto y rendering natural */
+.logo-img {
+  width: 36px !important;
+  height: 36px !important;
+  image-rendering: auto !important;
+  object-fit: contain !important;
+}
