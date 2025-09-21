@@ -1217,3 +1217,8 @@ header.topbar .wrap .brand .brand-text {
   font-size: 15px !important;
   color: var(--ink) !important;
 }
+/* 🎯 Ajuste de peso visual en menú principal */
+.nav .link {
+  font-weight: 500 !important;
+}
+
