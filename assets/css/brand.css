@@ -2750,3 +2750,23 @@ body { margin: 0; }
 /* Quita cualquier relleno del home si quedó detrás */
 .section-nosotros + .placeholder-hero{ display:none !important; }
 
+
+/* === Brand color token (verde INSEMAD) === */
+:root{ --brand-green:#045C64; }
+
+/* === Hero por defecto: verde sólido de marca === */
+.hero{ 
+  background: var(--brand-green) !important;
+  padding: 48px 0 !important;           /* altura razonable en internas */
+}
+
+/* === Excepción: Home mantiene gradiente (si lo usas) === */
+body.home .hero{
+  background: linear-gradient(180deg,#02676A 0%, #004F52 100%) !important;
+}
+
+/* === Productos: aún más compacto arriba === */
+#productos.hero{ padding: 32px 0 24px !important; }
+
+/* === Nosotros: sigue aislado en blanco (por si otro CSS pisa) === */
+#nosotros.section-nosotros{ background:#fff !important; }
