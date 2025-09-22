@@ -2395,3 +2395,18 @@ section#nosotros .about-list li{ margin: 6px 0 !important; }
 
 /* 7) Asegurar que nada “empuje” desde atrás */
 section#nosotros .placeholder-hero{ display:none !important; }
+
+/* ===== Sección Nosotros – Foto fundador como background ===== */
+section#nosotros .hero-card.about-card {
+  background-image: url("assets/img/nosotros/victor.png?v=bg1");
+  background-size: cover;
+  background-position: top center;
+  border-left: 12px solid #ffffff; /* marco blanco izquierdo */
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 100vh; /* asegura que ocupe todo el alto visible */
+}
+
+section#nosotros #founder-photo {
+  display: none !important; /* ocultamos el <img> conflictivo */
+}
