@@ -1,0 +1,64 @@
+/* ==== NOSOTROS: override fuerte y estable ==== */
+:root {
+  --hero-band-height: 560px;       /* altura franja verde desktop */
+  --hero-band-height-sm: 360px;    /* altura franja verde mobile */
+}
+
+/* Apaga fondos/overlays heredados */
+#nosotros.section-nosotros,
+#nosotros.section-nosotros::before,
+#nosotros .hero,
+#nosotros .hero::before{
+  background: none !important;
+  box-shadow: none !important;
+}
+
+/* Franja verde arriba + blanco abajo */
+#nosotros.section-nosotros{
+  background: linear-gradient(
+    180deg,
+    var(--brand-green) 0,
+    var(--brand-green) var(--hero-band-height),
+    #fff var(--hero-band-height)
+  ) !important;
+  padding: 24px 0 80px !important;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  #nosotros.section-nosotros{
+    background: linear-gradient(
+      180deg,
+      var(--brand-green) 0,
+      var(--brand-green) var(--hero-band-height-sm),
+      #fff var(--hero-band-height-sm)
+    ) !important;
+    padding: 16px 0 64px !important;
+  }
+}
+
+/* Grid estable foto + texto */
+#nosotros .hero-inner.container{
+  max-width:1100px !important; margin:0 auto !important;
+  display:grid !important; grid-template-columns:minmax(280px,420px) 1fr !important;
+  gap:clamp(20px,4vw,40px) !important; align-items:start !important;
+}
+
+/* Foto a la izquierda */
+#nosotros .about-photo{
+  width:100% !important; aspect-ratio:1/1 !important; object-fit:cover !important; object-position:center !important;
+  border-radius:16px !important; box-shadow:0 6px 20px rgba(0,0,0,.08) !important;
+}
+@media (min-width:1100px){ #nosotros .about-photo{ margin-left:-90px !important; } }
+@media (max-width: 900px){ #nosotros .about-photo{ margin-left:0 !important; } }
+
+/* Texto siempre visible/legible */
+#nosotros .about-text{
+  grid-column:2 !important; display:block !important; visibility:visible !important; opacity:1 !important;
+  color:#2a3f44 !important; font-size:16px !important; line-height:1.7 !important;
+}
+#nosotros .about-text > *{ max-width:68ch !important; }
+
+/* Títulos claros sobre la franja verde */
+#nosotros .about-h1{ color:#EAF5F5 !important; }
+#nosotros .about-h2{ color:#D4ECEC !important; }
