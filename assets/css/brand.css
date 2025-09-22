@@ -2831,3 +2831,68 @@ section#nosotros.section-nosotros .hero-inner.container{
   display:grid !important; grid-template-columns:minmax(280px,420px) 1fr !important;
   gap:clamp(20px,4vw,40px) !important; align-items:start !important;
 }
+
+/* === [HOTFIX NOSOTROS] Normaliza .about-text y *descendientes* === */
+#nosotros.section-nosotros .about-text,
+#nosotros.section-nosotros .about-text *{
+  /* Visibilidad */
+  display: revert !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+
+  /* Cancelar efectos que puedan ocultar */
+  animation: none !important;
+  transition: none !important;
+  transform: none !important;
+  filter: none !important;
+
+  /* Reset de layout que a veces manda fuera de pantalla */
+  position: static !important;
+  float: none !important;
+  clear: none !important;
+  text-indent: 0 !important;
+  clip: auto !important;
+  clip-path: none !important;
+  pointer-events: auto !important;
+  z-index: auto !important;
+
+  /* Tamaños razonables */
+  max-width: none !important;
+  max-height: none !important;
+  overflow: visible !important;
+
+  /* Tipografía/colores sobre fondo blanco */
+  color: #2a3f44 !important;
+  font-size: inherit !important;
+  line-height: inherit !important;
+}
+
+/* Layout del bloque (por si algo lo pisa) */
+#nosotros.section-nosotros{ background:#fff !important; padding:clamp(40px,6vw,80px) 20px !important; }
+#nosotros.section-nosotros .hero-inner.container{
+  max-width:1100px !important; margin:0 auto !important;
+  display:grid !important; grid-template-columns:minmax(280px,420px) 1fr !important;
+  gap:clamp(20px,4vw,40px) !important; align-items:start !important;
+}
+#nosotros.section-nosotros .about-photo{
+  width:100% !important; aspect-ratio:1/1 !important; object-fit:cover !important; object-position:center !important;
+  border-radius:16px !important; box-shadow:0 6px 20px rgba(0,0,0,.08) !important;
+}
+#nosotros.section-nosotros .about-text > *{ max-width:68ch !important; }
+@media (max-width:900px){ #nosotros.section-nosotros .hero-inner.container{ grid-template-columns:1fr !important; } }
+
+/* Títulos */
+#nosotros .about-h1{
+  margin:0 0 8px !important;
+  font-family:'Inter',system-ui,-apple-system,"Segoe UI",Roboto,sans-serif !important;
+  font-weight:900 !important; letter-spacing:-0.015em !important; line-height:1.15 !important;
+  font-size:clamp(28px,3.2vw,38px) !important; color:#0c2f33 !important;
+}
+#nosotros .about-h2{
+  margin:0 0 18px !important; font-weight:600 !important;
+  font-size:clamp(18px,2.2vw,22px) !important; color:#355057 !important;
+}
+#nosotros .about-kicker{
+  margin:28px 0 10px !important; font-weight:800 !important; text-transform:uppercase !important;
+  font-size:13px !important; color:#0b7d80 !important;
+}
