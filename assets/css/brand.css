@@ -2265,3 +2265,60 @@ section#nosotros.hero {
   box-shadow: none;
 }
 
+
+/* ===== Nosotros – layout 2 columnas y tipografía (ajustes finales) ===== */
+section#nosotros .hero-inner{
+  display: grid !important;
+  grid-template-columns: minmax(360px, 420px) minmax(520px, 1fr) !important; /* FOTO | TEXTO */
+  gap: 48px !important;
+  align-items: start !important;
+}
+
+section#nosotros .about-card{
+  grid-column: 1 !important;
+  justify-self: start !important;
+}
+
+section#nosotros .about-text{
+  grid-column: 2 !important;
+  justify-self: start !important;
+  text-align: left !important;
+  max-width: 780px !important;      /* ancho cómodo de lectura */
+  color: rgba(255,255,255,.95) !important;
+}
+
+/* Tipografías (estilo palosa) */
+section#nosotros .about-h1{
+  font-size: clamp(28px, 3.6vw, 44px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 0 8px !important;
+  color: #ffffff !important;
+}
+
+section#nosotros .about-h2{
+  font-size: clamp(18px, 2.2vw, 22px) !important;
+  font-weight: 600 !important;
+  margin: 0 0 18px !important;
+  color: rgba(255,255,255,.9) !important;
+}
+
+section#nosotros .about-kicker{
+  font-size: clamp(16px, 1.9vw, 20px) !important;
+  font-weight: 700 !important;
+  margin: 22px 0 8px !important;
+  color: #ffffff !important;
+}
+
+section#nosotros .about-text p{ margin: 10px 0 14px !important; }
+section#nosotros .about-list{ padding-left: 18px !important; }
+
+section#nosotros .placeholder-hero{ display: none !important; } /* nada de espacios fantasma */
+
+/* Foto fundador: altura controlada y encaje */
+section#nosotros #founder-photo{
+  height: clamp(520px, 64vh, 680px) !important;
+  width: auto !important;
+  object-fit: cover !important;
+  display: block !important;
+}
