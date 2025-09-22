@@ -2322,3 +2322,24 @@ section#nosotros #founder-photo{
   object-fit: cover !important;
   display: block !important;
 }
+
+/* ===== Sección Nosotros – Ajuste definitivo ===== */
+.hero-card.about-card {
+  height: 100% !important;   /* ocupar todo el alto del bloque verde */
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: stretch;      /* estira el contenido (la foto) */
+}
+
+#founder-photo {
+  flex: 1;
+  height: 100% !important;   /* ocupa el alto completo */
+  width: auto !important;
+  object-fit: cover;         /* relleno sin deformar */
+  border-left: 12px solid #ffffff; /* marco blanco solo al lado izquierdo */
+  border-radius: 0;
+  box-shadow: none;
+}
