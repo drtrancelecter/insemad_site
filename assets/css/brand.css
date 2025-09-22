@@ -2575,3 +2575,13 @@ section#nosotros .hero-card.about-card{ display:none !important; background:none
     padding-inline: 16px !important;
   }
 }
+
+/* ===== Sección Nosotros – Foto centrada con marco blanco lateral ===== */
+.about-text {
+  background: url("assets/img/nosotros/victor.png") no-repeat center center;
+  background-size: cover;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-top: none;
+  border-bottom: none;
+}
