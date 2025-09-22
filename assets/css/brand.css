@@ -2156,3 +2156,47 @@ section#nosotros #founder-photo{
   margin: 0 !important;
 }
 
+
+/* ===== Nosotros: layout y tipografía ===== */
+section#nosotros .hero-inner{
+  display: grid !important;
+  grid-template-columns: 420px 1fr !important; /* foto | texto */
+  gap: 42px !important;
+  align-items: start !important;
+}
+section#nosotros .about-card{ grid-column: 1 !important; }
+section#nosotros .about-text{ grid-column: 2 !important; display:block !important; visibility: visible !important; opacity: 1 !important; }
+
+/* Tipos (estilo palosa.de aproximado) */
+section#nosotros .about-h1{
+  font-size: clamp(28px, 3.4vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 2px 0 6px;
+  color: #ffffff;
+}
+section#nosotros .about-h2{
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 600;
+  color: rgba(255,255,255,.92);
+  margin: 0 0 16px;
+}
+section#nosotros .about-kicker{
+  font-size: clamp(16px, 1.9vw, 20px);
+  font-weight: 700;
+  margin: 18px 0 6px;
+  color: #ffffff;
+}
+section#nosotros .about-text p,
+section#nosotros .about-list{
+  color: rgba(255,255,255,.95);
+  line-height: 1.6;
+  font-size: clamp(15px, 1.5vw, 17px);
+  margin: 10px 0;
+}
+section#nosotros .about-list{ padding-left: 18px; }
+section#nosotros .about-closing{ margin-top: 14px; }
+
+/* Seguridad: jamás ocultar el texto en esta sección */
+section#nosotros .hero-title,
+section#nosotros .placeholder-hero { display:none !important; }
