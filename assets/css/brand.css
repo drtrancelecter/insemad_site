@@ -2450,3 +2450,128 @@ section#nosotros .about-list li{ margin: 6px 0 !important; }
 
 /* Reduce ligeramente el padding del section para acercar al borde superior de la franja */
 section#nosotros.hero{ padding: 24px 0 56px !important; }
+
+/* ===== Sección Nosotros – Foto fundador en franja verde ===== */
+.about-text {
+  background: url("assets/img/nosotros/victor.png") no-repeat center center;
+  background-size: cover;
+  border-left: 12px solid #ffffff; /* marco blanco lateral */
+}
+
+/* ===== HOTFIX Nosotros: usar todo el ancho disponible de la franja ===== */
+section#nosotros .hero-inner{
+  /* reducimos rellenos para ganar ancho útil */
+  padding-left: 24px !important;
+  padding-right: 28px !important;
+  /* si hay un max-width del layout, lo permitimos un poco más grande */
+  max-width: 1400px !important;
+  gap: 32px !important;                 /* un poco menos de separación foto|texto */
+  grid-template-columns: minmax(360px,420px) 1fr !important;  /* foto | texto */
+}
+
+/* Columna de texto: sin tope de ancho y ocupando realmente el 1fr */
+section#nosotros .about-text{
+  grid-column: 2 !important;
+  margin: 0 !important;
+  max-width: none !important;           /* anula límites anteriores */
+  width: clamp(760px, 58vw, 1000px) !important; /* ensancha: 760–1000px según viewport */
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+/* Separadores bajo subtítulos: a todo el ancho del bloque de texto */
+section#nosotros .about-kicker{
+  font-weight: 700 !important;
+  padding-top: 4px !important;
+}
+section#nosotros .about-kicker::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(255,255,255,0.28);
+  margin: 10px 0 14px;
+  width: 100% !important;               /* línea completa */
+}
+
+/* Listas un poco más compactas */
+section#nosotros .about-list{
+  padding-left: 20px !important;
+  margin: 6px 0 14px !important;
+}
+section#nosotros .about-list li{ margin: 6px 0 !important; }
+
+/* Por si algún placeholder o card mete espacio en blanco */
+section#nosotros .placeholder-hero,
+section#nosotros .hero-card.about-card{ display:none !important; background:none !important; box-shadow:none !important; padding:0 !important; margin:0 !important; }
+
+/* Móviles/tablet: mantenemos legible sin desbordar */
+@media (max-width: 900px){
+  section#nosotros .about-text{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding-inline: 16px !important;
+  }
+}
+
+/* ===== HOTFIX Nosotros: usar todo el ancho disponible de la franja ===== */
+section#nosotros .hero-inner{
+  /* reducimos rellenos para ganar ancho útil */
+  padding-left: 24px !important;
+  padding-right: 28px !important;
+  /* si hay un max-width del layout, lo permitimos un poco más grande */
+  max-width: 1400px !important;
+  gap: 32px !important;                 /* un poco menos de separación foto|texto */
+  grid-template-columns: minmax(360px,420px) 1fr !important;  /* foto | texto */
+}
+
+/* Columna de texto: sin tope de ancho y ocupando realmente el 1fr */
+section#nosotros .about-text{
+  grid-column: 2 !important;
+  margin: 0 !important;
+  max-width: none !important;           /* anula límites anteriores */
+  width: clamp(760px, 58vw, 1000px) !important; /* ensancha: 760–1000px según viewport */
+  box-sizing: border-box !important;
+  text-align: left !important;
+}
+
+/* Separadores bajo subtítulos: a todo el ancho del bloque de texto */
+section#nosotros .about-kicker{
+  font-weight: 700 !important;
+  padding-top: 4px !important;
+}
+section#nosotros .about-kicker::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(255,255,255,0.28);
+  margin: 10px 0 14px;
+  width: 100% !important;               /* línea completa */
+}
+
+/* Listas un poco más compactas */
+section#nosotros .about-list{
+  padding-left: 20px !important;
+  margin: 6px 0 14px !important;
+}
+section#nosotros .about-list li{ margin: 6px 0 !important; }
+
+/* Por si algún placeholder o card mete espacio en blanco */
+section#nosotros .placeholder-hero,
+section#nosotros .hero-card.about-card{ display:none !important; background:none !important; box-shadow:none !important; padding:0 !important; margin:0 !important; }
+
+/* Móviles/tablet: mantenemos legible sin desbordar */
+@media (max-width: 900px){
+  section#nosotros .about-text{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+    padding-inline: 16px !important;
+  }
+}
