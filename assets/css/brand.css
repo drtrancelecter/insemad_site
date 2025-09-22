@@ -2927,3 +2927,50 @@ section#nosotros.section-nosotros .hero-inner.container{
 @media (max-width: 900px){
   #nosotros .about-photo{ margin-left: 0 !important; }
 }
+
+/* =======================
+   NOSOTROS: verde arriba + blanco abajo (override fuerte)
+   ======================= */
+
+/* Mata cualquier fondo previo en la sección */
+body #nosotros.section-nosotros{
+  background: linear-gradient(180deg, var(--brand-green) 0, var(--brand-green) 220px, #fff 220px) !important;
+  padding: 24px 0 80px !important;
+}
+
+/* Responsive: verde un poco menos alto en móviles */
+@media (max-width: 900px){
+  body #nosotros.section-nosotros{
+    background: linear-gradient(180deg, var(--brand-green) 0, var(--brand-green) 160px, #fff 160px) !important;
+    padding: 16px 0 64px !important;
+  }
+}
+
+/* Foto bien a la izquierda en pantallas grandes */
+@media (min-width: 1100px){
+  #nosotros .about-photo{ margin-left: -60px !important; }
+}
+@media (min-width: 1400px){
+  #nosotros .about-photo{ margin-left: -90px !important; }
+}
+@media (max-width: 900px){
+  #nosotros .about-photo{ margin-left: 0 !important; }
+}
+
+/* Legibilidad: títulos y los 2 primeros párrafos sobre el verde */
+#nosotros .about-h1{ color:#EAF5F5 !important; }
+#nosotros .about-h2{ color:#D4ECEC !important; }
+#nosotros .about-text p:nth-of-type(-n+2){
+  color:#EAF5F5 !important;
+}
+#nosotros .about-text p:nth-of-type(-n+2) strong{
+  color:#FFFFFF !important;
+}
+
+/* Asegura que el texto posterior (sobre blanco) tenga color normal */
+#nosotros .about-text{
+  color:#2a3f44 !important;
+}
+
+/* Si algún CSS viejo dejara el fondo en blanco, esta línea lo rompe por especificidad */
+body #nosotros.section-nosotros.section-nosotros{ background-blend-mode:normal !important; }
