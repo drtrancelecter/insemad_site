@@ -2770,3 +2770,19 @@ body.home .hero{
 
 /* === Nosotros: sigue aislado en blanco (por si otro CSS pisa) === */
 #nosotros.section-nosotros{ background:#fff !important; }
+#nosotros.section-nosotros{background:#fff !important;padding:clamp(40px,6vw,80px) 20px !important;}
+#nosotros .hero-inner.container{
+  max-width:1100px !important;margin:0 auto !important;
+  display:grid !important;grid-template-columns:minmax(280px,420px) 1fr !important;
+  gap:clamp(20px,4vw,40px) !important;align-items:start !important;
+}
+#nosotros .about-photo{
+  width:100% !important;aspect-ratio:1/1 !important;object-fit:cover !important;object-position:center !important;
+  border-radius:16px !important;box-shadow:0 6px 20px rgba(0,0,0,.08) !important;
+}
+#nosotros .about-text{
+  grid-column:2 !important;display:block !important;visibility:visible !important;opacity:1 !important;
+  color:#2a3f44 !important;font-size:16px !important;line-height:1.7 !important;
+}
+#nosotros .about-text > *{max-width:68ch !important;}
+@media (max-width:900px){#nosotros .hero-inner.container{grid-template-columns:1fr !important;}}
