@@ -2343,3 +2343,55 @@ section#nosotros #founder-photo{
   border-radius: 0;
   box-shadow: none;
 }
+
+/* ====== Nosotros: aprovechar el largo + separadores ====== */
+
+/* 1) Más ancho total de la sección */
+section#nosotros .hero-inner{
+  max-width: 1280px !important;        /* antes ~1100; ahora más aire */
+  grid-template-columns: 420px minmax(640px, 1fr) !important;  /* foto | texto más ancho */
+  gap: 44px !important;
+}
+
+/* 2) Columna de texto más ancha y legible */
+section#nosotros .about-text{
+  max-width: 920px !important;         /* ensancha la columna de lectura */
+  text-align: left !important;
+}
+
+/* 3) Párrafos más “fluídos” en ancho grande */
+@media (min-width: 1200px){
+  section#nosotros .about-text p{
+    line-height: 1.55 !important;
+    font-size: 17px !important;
+  }
+}
+
+/* 4) Separadores como tus líneas negras: bajo cada "kicker" */
+section#nosotros .about-kicker{
+  position: relative;
+  padding-top: 10px !important;
+  margin: 26px 0 10px !important;
+}
+section#nosotros .about-kicker::after{
+  content: "";
+  display: block;
+  height: 2px;
+  background: rgba(255,255,255,0.28);  /* sutil, no tan fuerte */
+  margin-top: 8px;
+  width: 100%;                         /* línea a lo ancho del texto */
+}
+
+/* 5) Primer bloque (h1/h2) ligeramente separado del resto */
+section#nosotros .about-h1{ margin-top: 2px !important; }
+section#nosotros .about-h2{ margin-bottom: 18px !important; }
+
+/* 6) Bullets más compactos y alineados */
+section#nosotros .about-list{
+  padding-left: 20px !important;
+  margin: 6px 0 14px !important;
+}
+section#nosotros .about-list li{ margin: 6px 0 !important; }
+
+/* 7) Asegurar que nada “empuje” desde atrás */
+section#nosotros .placeholder-hero{ display:none !important; }
