@@ -1,4 +1,5 @@
 :root{--hero-band-height:560px;--hero-band-height-sm:360px;}
+:root{--hero-band-height:560px;--hero-band-height-sm:360px;}
 /* ==== NOSOTROS: override fuerte y estable ==== */
 :root {
   --hero-band-height: 560px;       /* altura franja verde desktop */
