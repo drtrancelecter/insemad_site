@@ -2605,3 +2605,74 @@ section#nosotros .hero-inner{
     padding-right: 24px !important;
   }
 }
+/* ===== HOTFIX NOSOTROS — FULL WIDTH & COL TEXTO ===== */
+section#nosotros .hero-inner.container{
+  max-width: none !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding-left: clamp(16px, 3vw, 32px) !important;
+  padding-right: clamp(16px, 3vw, 32px) !important;
+  box-sizing: border-box !important;
+}
+
+section#nosotros.hero{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Grilla: foto | texto */
+section#nosotros .hero-inner{
+  display: grid !important;
+  grid-template-columns: minmax(320px, 28vw) 1fr !important; /* foto, luego texto */
+  gap: clamp(20px, 3vw, 40px) !important;
+  align-items: start !important;
+}
+
+/* Asegurar que el TEXTO use todo el espacio disponible */
+section#nosotros .about-text{
+  display: block !important;
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+/* Quitar cualquier límite heredado dentro del texto */
+section#nosotros .about-text > *{
+  max-width: none !important;
+}
+
+/* Separadores bajo subtítulos a lo ancho del bloque de texto */
+section#nosotros .about-kicker{
+  margin: 20px 0 6px !important;
+  font-weight: 700 !important;
+}
+section#nosotros .about-kicker::after{
+  content: "";
+  display: block;
+  height: 1px;
+  background: rgba(255,255,255,0.28);
+  margin-top: 10px;
+  width: 100% !important;
+}
+
+/* Compactar listas y párrafos para un ritmo más fluido */
+section#nosotros .about-text p{ margin: 10px 0 14px !important; }
+section#nosotros .about-list{ padding-left: 20px !important; margin: 6px 0 14px !important; }
+section#nosotros .about-list li{ margin: 6px 0 !important; }
+
+/* Nada “empujando” desde atrás */
+section#nosotros .placeholder-hero,
+section#nosotros .hero-card.about-card{
+  display: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Responsivo: 1 columna en móviles */
+@media (max-width: 900px){
+  section#nosotros .hero-inner{
+    grid-template-columns: 1fr !important;
+  }
+}
