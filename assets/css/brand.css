@@ -2238,3 +2238,30 @@ section#nosotros.hero {
   box-shadow: none;
 }
 
+
+/* ===== Fix Nosotros: foto ocupa todo el alto ===== */
+section#nosotros.hero {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;
+}
+
+.hero-card.about-card {
+  flex: 0 0 auto;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  display: flex;
+}
+
+#founder-photo {
+  height: 100% !important;
+  width: auto !important;
+  object-fit: cover;
+  border-left: 12px solid #ffffff;
+  border-radius: 0;
+  box-shadow: none;
+}
+
