@@ -2896,3 +2896,12 @@ section#nosotros.section-nosotros .hero-inner.container{
   margin:28px 0 10px !important; font-weight:800 !important; text-transform:uppercase !important;
   font-size:13px !important; color:#0b7d80 !important;
 }
+
+/* Banda superior verde y resto blanco – NOSOTROS */
+#nosotros.section-nosotros{
+  background: linear-gradient(180deg, var(--brand-green) 0 220px, #fff 220px) !important;
+  padding: 0 0 clamp(48px,6vw,80px) !important;
+}
+#nosotros.section-nosotros .hero-inner.container{
+  padding-top: clamp(24px,4vw,40px) !important;
+}
