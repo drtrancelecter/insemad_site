@@ -2585,3 +2585,23 @@ section#nosotros .hero-card.about-card{ display:none !important; background:none
   border-top: none;
   border-bottom: none;
 }
+
+/* ===== MODO FORZADO (por si el tema sigue estrechando) ===== */
+section#nosotros .about-text{
+  width: min(1000px, calc(100vw - 520px)) !important; /* 520 ≈ foto+gaps */
+  max-width: none !important;
+}
+section#nosotros .hero-inner{
+  max-width: none !important;
+  width: 100% !important;
+}
+
+@media (min-width: 1280px){
+  /* Empuja la columna de texto a ocupar más ancho real */
+  section#nosotros .hero-inner{
+    grid-template-columns: minmax(360px, 420px) 1fr !important;
+    gap: 28px !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+}
