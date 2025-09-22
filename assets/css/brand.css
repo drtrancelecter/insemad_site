@@ -2974,3 +2974,33 @@ body #nosotros.section-nosotros{
 
 /* Si algún CSS viejo dejara el fondo en blanco, esta línea lo rompe por especificidad */
 body #nosotros.section-nosotros.section-nosotros{ background-blend-mode:normal !important; }
+/* === NOSOTROS – overrides finales, máxima prioridad === */
+
+/* Ajusta altura del verde un poco más */
+body #nosotros.section-nosotros{
+  background: linear-gradient(180deg, var(--brand-green) 0, var(--brand-green) 260px, #fff 260px) !important;
+}
+
+/* Foto más pegada al borde izq en desktop grandes */
+@media (min-width: 1100px){
+  #nosotros .about-photo{ margin-left: -110px !important; }
+}
+@media (min-width: 1600px){
+  #nosotros .about-photo{ margin-left: -140px !important; }
+}
+
+/* ——— Legibilidad sobre el verde ———
+   OJO: estas reglas VAN DESPUÉS del color base de .about-text.
+   Aumentamos especificidad y usamos !important. */
+body #nosotros.section-nosotros .about-text h1.about-h1,
+body #nosotros.section-nosotros .about-text h2.about-h2{
+  color:#EAF5F5 !important;
+}
+
+/* Primeros 2 párrafos en claro (quedan sobre el verde) */
+body #nosotros.section-nosotros .about-text p:nth-of-type(-n+2){
+  color:#EAF5F5 !important;
+}
+body #nosotros.section-nosotros .about-text p:nth-of-type(-n+2) strong{
+  color:#FFFFFF !important;
+}
