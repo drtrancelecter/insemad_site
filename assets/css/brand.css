@@ -2410,3 +2410,43 @@ section#nosotros .hero-card.about-card {
 section#nosotros #founder-photo {
   display: none !important; /* ocultamos el <img> conflictivo */
 }
+/* ====== NOSOTROS: ancho y layout de la columna de texto ====== */
+section#nosotros .hero-inner{
+  /* usa todo el ancho disponible del contenedor */
+  max-width: 1320px !important;
+  grid-template-columns: 420px minmax(720px, 1fr) !important; /* foto | texto */
+  gap: 44px !important;
+  padding-inline: 24px !important; /* reduce padding lateral para “correr” todo a la izquierda */
+}
+
+/* Columna de texto más ancha en desktop grandes */
+@media (min-width: 1280px){
+  section#nosotros .about-text{ max-width: 980px !important; }
+}
+
+/* Alineación y ritmo del texto */
+section#nosotros .about-text{
+  margin-top: 8px !important;
+  margin-bottom: 28px !important;
+}
+
+/* Subtítulos + línea separadora de ancho completo del bloque */
+section#nosotros .about-kicker{
+  margin: 26px 0 10px !important;
+  padding-top: 8px !important;
+}
+section#nosotros .about-kicker::after{
+  content:"";
+  display:block;
+  height:2px;
+  background: rgba(255,255,255,0.38);
+  margin-top:10px;
+  width: 100%;          /* ocupa todo el ancho del texto */
+}
+
+/* Listas un poco más compactas */
+section#nosotros .about-list{ padding-left: 20px !important; margin: 6px 0 14px !important; }
+section#nosotros .about-list li{ margin: 6px 0 !important; }
+
+/* Reduce ligeramente el padding del section para acercar al borde superior de la franja */
+section#nosotros.hero{ padding: 24px 0 56px !important; }
