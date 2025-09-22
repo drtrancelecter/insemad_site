@@ -2136,3 +2136,23 @@ section#nosotros #founder-photo{
   padding: 0 !important;
 }
 
+
+/* ===== Sección Nosotros – Foto Fundador ajustada ===== */
+#founder-photo {
+  display: block;
+  height: 100% !important;          /* ocupa todo el alto del contenedor verde */
+  object-fit: cover;                /* asegura proporción y relleno */
+  margin: 0;                        /* sin márgenes extra */
+  border-left: 12px solid #ffffff;  /* marco blanco solo al lado izquierdo */
+  border-radius: 0;                 /* sin bordes redondeados */
+  box-shadow: none;                 /* limpio */
+}
+
+.hero-card.about-card {
+  background: none !important;
+  box-shadow: none !important;
+  height: 100% !important;          /* que herede altura completa */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
