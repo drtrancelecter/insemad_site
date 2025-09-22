@@ -2703,3 +2703,6 @@ section#nosotros.hero {
 @media (max-width: 900px){
   #nosotros .hero-inner.container{ grid-template-columns:1fr; }
 }
+
+/* === Reset base para evitar sangrías del user-agent === */
+body { margin: 0; }
