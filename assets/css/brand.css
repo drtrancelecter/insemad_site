@@ -3163,3 +3163,45 @@ section#nosotros .nos-copy li{ margin: 6px 0; }
   section#nosotros .nos-photos{ flex-direction:row; }
   section#nosotros .nos-shot img{ height:160px; }
 }
+/* ===== NOSOTROS – refuerzo visual fotos + tipografía ===== */
+section#nosotros .nos-layout{
+  display:grid !important;
+  grid-template-columns: minmax(340px, 440px) 1fr; /* fotos | texto */
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 56px 24px 72px;
+}
+
+/* Columna de fotos: 2 bloques con misma altura, aunque falte la imagen */
+section#nosotros .nos-photos{ display:flex; flex-direction:column; gap:18px; }
+section#nosotros .nos-shot{
+  position:relative; margin:0; border-radius:12px; overflow:hidden;
+  min-height: 260px; /* asegura volumen visual */
+  background: linear-gradient(135deg,#0c8c87 0%, #07625f 100%);
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+section#nosotros .nos-shot img{
+  position:absolute; inset:0; width:100%; height:100%;
+  object-fit:cover; display:block;
+}
+
+/* Texto: más grande/legible, bullets blancos, reglas suaves */
+section#nosotros .nos-copy{ color:#fff; line-height:1.7; }
+section#nosotros .nos-copy h1{ font-size: clamp(30px, 3.2vw, 44px); margin:0 0 10px; }
+section#nosotros .nos-copy h2,
+section#nosotros .nos-copy h3{ font-size: clamp(18px, 2.1vw, 24px); margin:20px 0 10px; }
+section#nosotros .nos-copy p{ font-size: clamp(15px, 1.4vw, 18px); margin: 10px 0 14px; max-width: 68ch; }
+section#nosotros .nos-copy ul{ padding-left: 22px; margin: 8px 0 16px; }
+section#nosotros .nos-copy li{ margin: 6px 0; font-size: clamp(15px, 1.4vw, 18px); }
+section#nosotros .nos-copy h3 + *{ border-top: 1px solid rgba(255,255,255,.25); padding-top: 12px; }
+
+/* Puntos blancos even en WebKit/Chromium: */
+section#nosotros .nos-copy li::marker{ color:#fff; }
+
+/* Responsive */
+@media (max-width: 980px){
+  section#nosotros .nos-layout{ grid-template-columns: 1fr; gap:20px; padding:32px 16px 48px; }
+  section#nosotros .nos-photos{ flex-direction:row; }
+  section#nosotros .nos-shot{ min-height: 160px; flex:1; }
+}
