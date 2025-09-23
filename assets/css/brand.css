@@ -3004,3 +3004,18 @@ body #nosotros.section-nosotros .about-text p:nth-of-type(-n+2){
 body #nosotros.section-nosotros .about-text p:nth-of-type(-n+2) strong{
   color:#FFFFFF !important;
 }
+
+/* ===== Sección Nosotros – Foto fundador como background ===== */
+section#nosotros .hero-card.about-card {
+  background-image: url("assets/img/nosotros/victor.png?v=bg1");
+  background-size: cover;
+  background-position: top center;
+  border-left: 12px solid #ffffff; /* marco blanco izquierdo */
+  border-radius: 0;
+  box-shadow: none;
+  min-height: 100vh; /* asegura que ocupe todo el alto visible */
+}
+
+section#nosotros #founder-photo {
+  display: none !important; /* ocultamos el <img> conflictivo */
+}
