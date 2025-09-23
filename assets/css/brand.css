@@ -3131,3 +3131,35 @@ section#nosotros #founder-photo{ display:none !important; }
 
 /* 5) Evitar scroll lateral si algo sobra */
 html, body{ overflow-x:hidden; }
+/* ===== NOSOTROS – 2 columnas (fotos izq, texto der) ===== */
+section#nosotros{ background:#005f5b !important; color:#fff; }
+section#nosotros .nos-layout{
+  display:grid !important;
+  grid-template-columns: minmax(320px, 420px) 1fr;
+  gap: 28px;
+  max-width: 1200px;     /* texto cómodo, sin tocar el full-bleed del fondo */
+  margin: 0 auto;
+  padding: 40px 24px 56px;
+}
+section#nosotros .nos-photos{
+  display:flex; flex-direction:column; gap:16px; align-self:start;
+}
+section#nosotros .nos-shot{ margin:0; background:#fff0; border-radius:10px; overflow:hidden; }
+section#nosotros .nos-shot img{
+  display:block; width:100%; height:280px; object-fit:cover; 
+  border-radius:10px; box-shadow:0 6px 16px rgba(0,0,0,.18);
+}
+section#nosotros .nos-copy{ color:#fff; line-height:1.6; }
+section#nosotros .nos-copy h1{ font-size: clamp(28px, 3.2vw, 40px); margin:0 0 8px; }
+section#nosotros .nos-copy h2,
+section#nosotros .nos-copy h3{ font-size: clamp(18px, 2.2vw, 22px); margin:18px 0 10px; }
+section#nosotros .nos-copy p{ margin: 10px 0 12px; }
+section#nosotros .nos-copy ul{ padding-left: 22px; margin: 8px 0 14px; }
+section#nosotros .nos-copy li{ margin: 6px 0; }
+
+/* Responsive: en móviles apilamos y bajamos alto de fotos */
+@media (max-width: 900px){
+  section#nosotros .nos-layout{ grid-template-columns: 1fr; gap:18px; padding: 24px 16px 36px; }
+  section#nosotros .nos-photos{ flex-direction:row; }
+  section#nosotros .nos-shot img{ height:160px; }
+}
