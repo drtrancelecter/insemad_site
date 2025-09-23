@@ -3037,3 +3037,44 @@ section#nosotros.hero,
 section#nosotros.section-nosotros{ min-height:0 !important; padding:0 !important; margin:0 !important; }
 section#nosotros .hero-inner.container{ max-width:none !important; width:100% !important; padding:0 !important; margin:0 auto !important; }
 section#nosotros *::before, section#nosotros *::after{ content:none !important; display:none !important; } /* corta decoraciones rezagadas */
+/* === NOSOTROS: full-bleed verde, sin columnas ni márgenes laterales === */
+section#nosotros.hero{
+  /* color de fondo que ya estás usando */
+  background:#005f5b !important;
+
+  /* que cubra todo el ancho de la ventana (ignorando el "container" del sitio) */
+  margin:0 !important;
+  padding:0 !important;
+  width:100vw !important;
+  min-height:70vh !important;
+
+  /* truco full-bleed dentro de layouts centrados */
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+
+  /* por si algo intentara ponerle bordes/sombras */
+  border:0 !important;
+  box-shadow:none !important;
+}
+
+section#nosotros .hero-inner,
+section#nosotros .hero-inner.container{
+  /* anulamos el "container" estrecho y cualquier relleno */
+  max-width:none !important;
+  width:100% !important;
+  padding:0 !important;
+  margin:0 !important;
+  background:transparent !important;
+}
+
+/* nada de pseudo-elementos, decoraciones o “placers” que metan barras blancas */
+section#nosotros *::before,
+section#nosotros *::after{ content:none !important; display:none !important; }
+
+/* por si quedó alguna tarjeta/foto oculta que aún ocupe espacio */
+section#nosotros .hero-card,
+section#nosotros .placeholder-hero,
+section#nosotros #founder-photo{ display:none !important; }
