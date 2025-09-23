@@ -3078,3 +3078,56 @@ section#nosotros *::after{ content:none !important; display:none !important; }
 section#nosotros .hero-card,
 section#nosotros .placeholder-hero,
 section#nosotros #founder-photo{ display:none !important; }
+/* ===== NOSOTROS — FORZAR FULL BLEED Y SALIR DEL GRID ===== */
+
+/* 1) La sección ocupa todo el ancho, sin hacks de calc() */
+section#nosotros.hero{
+  background:#005f5b !important;
+  display:block !important;
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  box-shadow:none !important;
+  min-height:70vh !important;
+
+  /* si el layout padre es grid, estírate de borde a borde */
+  grid-column: 1 / -1 !important;
+  justify-self: stretch !important;
+  align-self: stretch !important;
+
+  /* desactivar cualquier posicionamiento previo */
+  position:relative !important;
+  left:auto !important;
+  right:auto !important;
+  transform:none !important;
+}
+
+/* 2) Romper el "container" centrado y cualquier grid interno */
+section#nosotros .hero-inner,
+section#nosotros .hero-inner.container{
+  display:block !important;            /* NO grid dentro */
+  width:100% !important;
+  max-width:none !important;
+  margin:0 !important;
+  padding:0 !important;
+  background:#005f5b !important;
+}
+
+/* 3) Por si el padre define grid: que la sección no herede restricciones */
+section#nosotros.hero,
+section#nosotros .hero-inner,
+section#nosotros .hero-inner.container{
+  place-self: stretch !important;
+}
+
+/* 4) Cortar decoraciones/elementos que puedan dejar barras */
+section#nosotros *::before,
+section#nosotros *::after{ content:none !important; display:none !important; }
+section#nosotros .hero-card,
+section#nosotros .placeholder-hero,
+section#nosotros #founder-photo{ display:none !important; }
+
+/* 5) Evitar scroll lateral si algo sobra */
+html, body{ overflow-x:hidden; }
