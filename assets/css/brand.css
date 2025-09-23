@@ -3019,3 +3019,16 @@ section#nosotros .hero-card.about-card {
 section#nosotros #founder-photo {
   display: none !important; /* ocultamos el <img> conflictivo */
 }
+/* ===== Reset duro para sección Nosotros (vacía) ===== */
+section#nosotros{ padding:0 !important; margin:0 !important; }
+section#nosotros .hero-inner{ 
+  display:block !important; 
+  padding:0 !important; 
+  margin:0 auto !important; 
+  min-height:0 !important; 
+  height:auto !important;
+  gap:0 !important;
+}
+section#nosotros .placeholder-hero,
+section#nosotros .hero-card.about-card,
+section#nosotros #founder-photo{ display:none !important; }
