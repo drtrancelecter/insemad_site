@@ -3032,3 +3032,8 @@ section#nosotros .hero-inner{
 section#nosotros .placeholder-hero,
 section#nosotros .hero-card.about-card,
 section#nosotros #founder-photo{ display:none !important; }
+/* ===== Reset complementario NOSOTROS (sección vacía) ===== */
+section#nosotros.hero,
+section#nosotros.section-nosotros{ min-height:0 !important; padding:0 !important; margin:0 !important; }
+section#nosotros .hero-inner.container{ max-width:none !important; width:100% !important; padding:0 !important; margin:0 auto !important; }
+section#nosotros *::before, section#nosotros *::after{ content:none !important; display:none !important; } /* corta decoraciones rezagadas */
