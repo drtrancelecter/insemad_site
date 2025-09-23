@@ -3205,3 +3205,27 @@ section#nosotros .nos-copy li::marker{ color:#fff; }
   section#nosotros .nos-photos{ flex-direction:row; }
   section#nosotros .nos-shot{ min-height: 160px; flex:1; }
 }
+
+/* ===== Nosotros: columna de fotos + texto ===== */
+#nosotros .nos-layout{
+  display:grid; grid-template-columns: 420px 1fr; gap: 36px;
+  align-items:start; padding: 32px 24px 56px;
+}
+#nosotros .nos-photos{ display:flex; flex-direction:column; gap: 16px; }
+#nosotros .nos-shot{
+  border-radius: 10px; overflow:hidden; box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  background: rgba(255,255,255,.06); min-height: 220px;
+}
+#nosotros .nos-shot img{ width:100%; height:100%; display:block; object-fit:cover; }
+
+/* Texto en la franja verde */
+#nosotros .nos-copy{ color:#fff; }
+#nosotros .nos-copy h1{ font-size: clamp(22px, 3vw, 34px); margin: 4px 0 14px; }
+#nosotros .nos-copy p, #nosotros .nos-copy li{ color: rgba(255,255,255,.92); line-height:1.6; }
+
+/* Responsive */
+@media (max-width: 980px){
+  #nosotros .nos-layout{ grid-template-columns: 1fr; }
+  #nosotros .nos-photos{ flex-direction:row; }
+  #nosotros .nos-shot{ flex:1 1 0; min-height: 180px; }
+}
