@@ -64,3 +64,13 @@
 /* Títulos claros sobre la franja verde */
 #nosotros .about-h1{ color:#EAF5F5 !important; }
 #nosotros .about-h2{ color:#D4ECEC !important; }
+
+/* 🔥 Fix directo: eliminar franja blanca en sección Nosotros */
+#nosotros, 
+#nosotros .hero-inner, 
+#nosotros .about-text {
+  background-color: #005f5b !important;  /* verde corporativo */
+  min-height: auto !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
